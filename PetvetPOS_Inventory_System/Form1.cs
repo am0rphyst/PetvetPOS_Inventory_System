@@ -12,9 +12,7 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class frmMain : Form
     {
-        Label titleHeader;
-
-
+        
         public frmMain()
         {
             InitializeComponent();
@@ -26,6 +24,11 @@ namespace PetvetPOS_Inventory_System
         }
 
         private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSidebar_Paint(object sender, PaintEventArgs e)
         {
 
         }
