@@ -76,6 +76,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.shapeContainer1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "MenuControl";
             this.Size = new System.Drawing.Size(92, 128);
             this.ResumeLayout(false);

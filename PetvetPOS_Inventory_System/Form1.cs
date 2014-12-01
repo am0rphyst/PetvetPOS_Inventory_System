@@ -33,5 +33,10 @@ namespace PetvetPOS_Inventory_System
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            label2.Text = DateTime.Today.Month.ToString() + "/" + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Year.ToString() + " " + DateTime.Today.DayOfWeek.ToString();
+        }
     }
 }
