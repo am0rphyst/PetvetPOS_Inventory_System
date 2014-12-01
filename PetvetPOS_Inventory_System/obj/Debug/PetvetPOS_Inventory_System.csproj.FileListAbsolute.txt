@@ -7,3 +7,4 @@ E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.exe
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.pdb
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.MenuControl.resources
+E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.MenuBar.resources

@@ -1,4 +1,5 @@
-﻿namespace PetvetPOS_Inventory_System
+﻿using System.Drawing;
+namespace PetvetPOS_Inventory_System
 {
     partial class frmMain
     {
@@ -28,17 +29,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape2 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape3 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.menuControl3 = new PetvetPOS_Inventory_System.MenuControl();
+            this.menuBar1 = new PetvetPOS_Inventory_System.MenuBar();
+            this.menuControl1 = new PetvetPOS_Inventory_System.MenuControl();
+            this.menuControl2 = new PetvetPOS_Inventory_System.MenuControl();
             this.panelHeader.SuspendLayout();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
@@ -65,54 +62,11 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "lblTitle";
             // 
-            // ovalShape1
-            // 
-            this.ovalShape1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.ovalShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ovalShape1.BackgroundImage")));
-            this.ovalShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape1.BorderColor = System.Drawing.Color.White;
-            this.ovalShape1.BorderWidth = 2;
-            this.ovalShape1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ovalShape1.Location = new System.Drawing.Point(25, 20);
-            this.ovalShape1.Name = "ovalShape1";
-            this.ovalShape1.Size = new System.Drawing.Size(56, 56);
-            this.ovalShape1.Click += new System.EventHandler(this.ovalShape1_Click);
-            // 
-            // ovalShape2
-            // 
-            this.ovalShape2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.ovalShape2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ovalShape2.BackgroundImage")));
-            this.ovalShape2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ovalShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape2.BorderColor = System.Drawing.Color.White;
-            this.ovalShape2.BorderWidth = 2;
-            this.ovalShape2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ovalShape2.Location = new System.Drawing.Point(25, 285);
-            this.ovalShape2.Name = "ovalShape2";
-            this.ovalShape2.Size = new System.Drawing.Size(56, 56);
-            // 
-            // ovalShape3
-            // 
-            this.ovalShape3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.ovalShape3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ovalShape3.BackgroundImage")));
-            this.ovalShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ovalShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape3.BorderColor = System.Drawing.Color.White;
-            this.ovalShape3.BorderWidth = 2;
-            this.ovalShape3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ovalShape3.Location = new System.Drawing.Point(26, 149);
-            this.ovalShape3.Name = "ovalShape3";
-            this.ovalShape3.Size = new System.Drawing.Size(56, 56);
-            // 
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(119)))), ((int)(((byte)(131)))));
             this.panelSidebar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSidebar.Controls.Add(this.label3);
-            this.panelSidebar.Controls.Add(this.label2);
-            this.panelSidebar.Controls.Add(this.label1);
-            this.panelSidebar.Controls.Add(this.shapeContainer1);
+            this.panelSidebar.Controls.Add(this.menuBar1);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 78);
             this.panelSidebar.Name = "panelSidebar";
@@ -120,52 +74,44 @@
             this.panelSidebar.TabIndex = 2;
             this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSidebar_Paint);
             // 
-            // shapeContainer1
+            // menuControl3
             // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.ovalShape1,
-            this.ovalShape2,
-            this.ovalShape3});
-            this.shapeContainer1.Size = new System.Drawing.Size(105, 617);
-            this.shapeContainer1.TabIndex = 0;
-            this.shapeContainer1.TabStop = false;
+            this.menuControl3.Location = new System.Drawing.Point(448, 300);
+            this.menuControl3.Name = "menuControl3";
+            this.menuControl3.Size = new System.Drawing.Size(92, 128);
+            this.menuControl3.TabIndex = 3;
             // 
-            // label1
+            // menuBar1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Users";
+            this.menuBar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuBar1.Location = new System.Drawing.Point(0, 0);
+            this.menuBar1.Name = "menuBar1";
+            this.menuBar1.Size = new System.Drawing.Size(105, 617);
+            this.menuBar1.TabIndex = 5;
             // 
-            // label2
+            // menuControl1
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 217);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "POS";
+            this.menuControl1.Location = new System.Drawing.Point(315, 256);
+            this.menuControl1.Name = "menuControl1";
+            this.menuControl1.Size = new System.Drawing.Size(92, 128);
+            this.menuControl1.TabIndex = 3;
             // 
-            // label3
+            // menuControl2
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 357);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Inventory";
+            this.menuControl2.Location = new System.Drawing.Point(183, 131);
+            this.menuControl2.Name = "menuControl2";
+            this.menuControl2.Size = new System.Drawing.Size(92, 128);
+            this.menuControl2.TabIndex = 4;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 697);
+            this.Controls.Add(this.menuControl3);
             this.Controls.Add(this.panelSidebar);
+            this.Controls.Add(this.menuControl1);
+            this.Controls.Add(this.menuControl2);
             this.Controls.Add(this.panelHeader);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -185,15 +131,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panelHeader;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape1;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape2;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape3;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelSidebar;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private MenuControl menuControl1;
+        private MenuControl menuControl2;
+        private MenuControl menuControl3;
+        private MenuBar menuBar1;
     }
 }
 
