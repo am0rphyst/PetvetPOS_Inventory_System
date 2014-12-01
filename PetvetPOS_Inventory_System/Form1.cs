@@ -38,5 +38,10 @@ namespace PetvetPOS_Inventory_System
         {
             label2.Text = DateTime.Today.Month.ToString() + "/" + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Year.ToString() + " " + DateTime.Today.DayOfWeek.ToString();
         }
+
+        private void titlebar1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

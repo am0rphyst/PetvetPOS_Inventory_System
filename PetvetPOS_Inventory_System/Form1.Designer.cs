@@ -32,17 +32,19 @@ namespace PetvetPOS_Inventory_System
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.menuBar1 = new PetvetPOS_Inventory_System.MenuBar();
-            this.titlebar1 = new PetvetPOS_Inventory_System.Titlebar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.userAdministration1 = new PetvetPOS_Inventory_System.UserAdministration();
+            this.menuBar1 = new PetvetPOS_Inventory_System.MenuBar();
+            this.titlebar1 = new PetvetPOS_Inventory_System.Titlebar();
             this.panelHeader.SuspendLayout();
             this.panelSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -80,25 +82,9 @@ namespace PetvetPOS_Inventory_System
             this.panelSidebar.TabIndex = 2;
             this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSidebar_Paint);
             // 
-            // menuBar1
-            // 
-            this.menuBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.menuBar1.Location = new System.Drawing.Point(0, 0);
-            this.menuBar1.Name = "menuBar1";
-            this.menuBar1.Size = new System.Drawing.Size(105, 617);
-            this.menuBar1.TabIndex = 0;
-            // 
-            // titlebar1
-            // 
-            this.titlebar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(99)))));
-            this.titlebar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.titlebar1.Location = new System.Drawing.Point(0, 0);
-            this.titlebar1.Name = "titlebar1";
-            this.titlebar1.Size = new System.Drawing.Size(782, 76);
-            this.titlebar1.TabIndex = 1;
-            // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(107, 78);
@@ -107,14 +93,16 @@ namespace PetvetPOS_Inventory_System
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(107, 114);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(677, 583);
-            this.panel2.TabIndex = 4;
+            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(477, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 36);
+            this.panel3.TabIndex = 2;
             // 
             // label1
             // 
@@ -136,22 +124,49 @@ namespace PetvetPOS_Inventory_System
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
-            // panel3
+            // mainPanel
             // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(477, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 36);
-            this.panel3.TabIndex = 2;
+            this.mainPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.mainPanel.Controls.Add(this.userAdministration1);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(107, 114);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(677, 583);
+            this.mainPanel.TabIndex = 4;
+            // 
+            // userAdministration1
+            // 
+            this.userAdministration1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userAdministration1.Location = new System.Drawing.Point(0, 0);
+            this.userAdministration1.Name = "userAdministration1";
+            this.userAdministration1.Size = new System.Drawing.Size(677, 583);
+            this.userAdministration1.TabIndex = 0;
+            // 
+            // menuBar1
+            // 
+            this.menuBar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuBar1.Location = new System.Drawing.Point(0, 0);
+            this.menuBar1.Name = "menuBar1";
+            this.menuBar1.Size = new System.Drawing.Size(105, 617);
+            this.menuBar1.TabIndex = 0;
+            // 
+            // titlebar1
+            // 
+            this.titlebar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(99)))));
+            this.titlebar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.titlebar1.Location = new System.Drawing.Point(0, 0);
+            this.titlebar1.Name = "titlebar1";
+            this.titlebar1.setTitle = "Title";
+            this.titlebar1.Size = new System.Drawing.Size(782, 76);
+            this.titlebar1.TabIndex = 1;
+            this.titlebar1.Load += new System.EventHandler(this.titlebar1_Load);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 697);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelHeader);
@@ -169,6 +184,7 @@ namespace PetvetPOS_Inventory_System
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.mainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -181,10 +197,11 @@ namespace PetvetPOS_Inventory_System
         private MenuBar menuBar1;
         private Titlebar titlebar1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private UserAdministration userAdministration1;
     }
 }
 

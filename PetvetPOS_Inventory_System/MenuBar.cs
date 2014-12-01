@@ -81,6 +81,7 @@ namespace PetvetPOS_Inventory_System
         {
             titlebar.setTitle = menuControl3.accessIconLabel;
             titlebar.Refresh();
+
             //unselectAll();
             ////menuControls[2].select();
         }

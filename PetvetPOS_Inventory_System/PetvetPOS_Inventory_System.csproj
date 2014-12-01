@@ -72,6 +72,12 @@
     <Compile Include="Titlebar.Designer.cs">
       <DependentUpon>Titlebar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAdministration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAdministration.Designer.cs">
+      <DependentUpon>UserAdministration.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="Titlebar.resx">
       <DependentUpon>Titlebar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAdministration.resx">
+      <DependentUpon>UserAdministration.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
