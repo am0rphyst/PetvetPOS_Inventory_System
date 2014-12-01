@@ -37,22 +37,27 @@
             // 
             this.menuControl1.Location = new System.Drawing.Point(5, 15);
             this.menuControl1.Name = "menuControl1";
-            this.menuControl1.Size = new System.Drawing.Size(92, 128);
+            this.menuControl1.Size = new System.Drawing.Size(92, 113);
             this.menuControl1.TabIndex = 0;
+            this.menuControl1.Load += new System.EventHandler(this.menuControl1_Load);
+            this.menuControl1.Click += new System.EventHandler(this.menuControl1_Click);
             // 
             // menuControl2
             // 
-            this.menuControl2.Location = new System.Drawing.Point(6, 145);
+            this.menuControl2.Location = new System.Drawing.Point(6, 146);
             this.menuControl2.Name = "menuControl2";
-            this.menuControl2.Size = new System.Drawing.Size(92, 128);
+            this.menuControl2.Size = new System.Drawing.Size(92, 116);
             this.menuControl2.TabIndex = 1;
+            this.menuControl2.Load += new System.EventHandler(this.menuControl2_Load);
+            this.menuControl2.Click += new System.EventHandler(this.menuControl2_Click);
             // 
             // menuControl3
             // 
-            this.menuControl3.Location = new System.Drawing.Point(6, 275);
+            this.menuControl3.Location = new System.Drawing.Point(6, 280);
             this.menuControl3.Name = "menuControl3";
             this.menuControl3.Size = new System.Drawing.Size(92, 128);
             this.menuControl3.TabIndex = 2;
+            this.menuControl3.Click += new System.EventHandler(this.menuControl3_Click);
             // 
             // MenuBar
             // 

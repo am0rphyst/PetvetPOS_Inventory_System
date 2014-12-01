@@ -32,10 +32,8 @@ namespace PetvetPOS_Inventory_System
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.menuControl3 = new PetvetPOS_Inventory_System.MenuControl();
             this.menuBar1 = new PetvetPOS_Inventory_System.MenuBar();
-            this.menuControl1 = new PetvetPOS_Inventory_System.MenuControl();
-            this.menuControl2 = new PetvetPOS_Inventory_System.MenuControl();
+            this.titlebar1 = new PetvetPOS_Inventory_System.Titlebar();
             this.panelHeader.SuspendLayout();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +42,7 @@ namespace PetvetPOS_Inventory_System
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(99)))));
             this.panelHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelHeader.Controls.Add(this.titlebar1);
             this.panelHeader.Controls.Add(this.lblTitle);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
@@ -74,44 +73,29 @@ namespace PetvetPOS_Inventory_System
             this.panelSidebar.TabIndex = 2;
             this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSidebar_Paint);
             // 
-            // menuControl3
-            // 
-            this.menuControl3.Location = new System.Drawing.Point(448, 300);
-            this.menuControl3.Name = "menuControl3";
-            this.menuControl3.Size = new System.Drawing.Size(92, 128);
-            this.menuControl3.TabIndex = 3;
-            // 
             // menuBar1
             // 
             this.menuBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuBar1.Location = new System.Drawing.Point(0, 0);
             this.menuBar1.Name = "menuBar1";
             this.menuBar1.Size = new System.Drawing.Size(105, 617);
-            this.menuBar1.TabIndex = 5;
+            this.menuBar1.TabIndex = 0;
             // 
-            // menuControl1
+            // titlebar1
             // 
-            this.menuControl1.Location = new System.Drawing.Point(315, 256);
-            this.menuControl1.Name = "menuControl1";
-            this.menuControl1.Size = new System.Drawing.Size(92, 128);
-            this.menuControl1.TabIndex = 3;
-            // 
-            // menuControl2
-            // 
-            this.menuControl2.Location = new System.Drawing.Point(183, 131);
-            this.menuControl2.Name = "menuControl2";
-            this.menuControl2.Size = new System.Drawing.Size(92, 128);
-            this.menuControl2.TabIndex = 4;
+            this.titlebar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(99)))));
+            this.titlebar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.titlebar1.Location = new System.Drawing.Point(0, 0);
+            this.titlebar1.Name = "titlebar1";
+            this.titlebar1.Size = new System.Drawing.Size(782, 76);
+            this.titlebar1.TabIndex = 1;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 697);
-            this.Controls.Add(this.menuControl3);
             this.Controls.Add(this.panelSidebar);
-            this.Controls.Add(this.menuControl1);
-            this.Controls.Add(this.menuControl2);
             this.Controls.Add(this.panelHeader);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -133,10 +117,8 @@ namespace PetvetPOS_Inventory_System
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelSidebar;
-        private MenuControl menuControl1;
-        private MenuControl menuControl2;
-        private MenuControl menuControl3;
         private MenuBar menuBar1;
+        private Titlebar titlebar1;
     }
 }
 

@@ -16,6 +16,7 @@ namespace PetvetPOS_Inventory_System
         public frmMain()
         {
             InitializeComponent();
+            menuBar1.controlTitleBar(titlebar1);
         }
 
         private void ovalShape1_Click(object sender, EventArgs e)
