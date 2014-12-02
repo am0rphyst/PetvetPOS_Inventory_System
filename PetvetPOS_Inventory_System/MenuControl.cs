@@ -93,10 +93,12 @@ namespace PetvetPOS_Inventory_System
             if (isSelected)
             {
                 icon.BackColor = Color.White;
+                icon.BorderColor = Color.Gold;
             }
             else
             {
                 icon.BackColor = origColor;
+                icon.BorderColor = Color.White;
             }
         }
         private void icon_MouseEnter(object sender, EventArgs e)

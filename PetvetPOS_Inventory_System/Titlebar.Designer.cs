@@ -44,7 +44,7 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(581, 102);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Title";
+            this.lblTitle.Text = "HOME";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 

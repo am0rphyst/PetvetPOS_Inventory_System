@@ -156,7 +156,7 @@ namespace PetvetPOS_Inventory_System
             this.titlebar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.titlebar1.Location = new System.Drawing.Point(0, 0);
             this.titlebar1.Name = "titlebar1";
-            this.titlebar1.setTitle = "Title";
+            this.titlebar1.setTitle = "HOME";
             this.titlebar1.Size = new System.Drawing.Size(782, 76);
             this.titlebar1.TabIndex = 1;
             this.titlebar1.Load += new System.EventHandler(this.titlebar1_Load);

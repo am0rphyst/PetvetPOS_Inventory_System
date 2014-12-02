@@ -10,4 +10,3 @@ E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.MenuBar.resources
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.Titlebar.resources
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.UserAdministration.resources
-E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.csprojResolveAssemblyReference.cache

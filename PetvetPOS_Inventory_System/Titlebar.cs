@@ -28,6 +28,7 @@ namespace PetvetPOS_Inventory_System
         public Titlebar()
         {
             InitializeComponent();
+            lblTitle.Text = "HOME";
         }
 
         public string setTitle 
@@ -38,7 +39,7 @@ namespace PetvetPOS_Inventory_System
             }
             set
             {
-                lblTitle.Text = value;
+                lblTitle.Text = value.ToUpper();
             }
         }
 
