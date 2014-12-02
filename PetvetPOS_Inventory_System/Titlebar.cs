@@ -41,8 +41,14 @@ namespace PetvetPOS_Inventory_System
                 lblTitle.Text = value;
             }
         }
-        
 
+        public Image setImage
+        {
+            set
+            {
+                pictureBox1.Image = value;
+            }
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 

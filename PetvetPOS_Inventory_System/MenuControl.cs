@@ -15,9 +15,10 @@ namespace PetvetPOS_Inventory_System
     {
         Label menuName;
         Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape1;
-        bool isSelected;
         Color origColor;
         Titlebar titlebar;
+        MenuBar menuBar;
+        bool isSelected;
 
         public MenuControl()
         {
@@ -37,6 +38,14 @@ namespace PetvetPOS_Inventory_System
             origColor = icon.BackColor;
         }
 
+        public MenuBar accessMenuBar
+        {
+            set
+            {
+                menuBar = value;
+            }
+                
+        }
         public Image setIconImage 
         {   
             set
@@ -59,6 +68,28 @@ namespace PetvetPOS_Inventory_System
 
         public void select()
         {
+           // icon.BackColor = Color.White;
+            isSelected = true;
+        }
+
+        private void icon_Click(object sender, EventArgs e)
+        {
+            //isSelected = true;
+            //select();
+            titlebar.setTitle = menuName.Text;
+            titlebar.setImage = icon.BackgroundImage;
+            menuBar.unselectAll();
+            this.select();
+            menuBar.updateMenus();
+        }
+
+        private void icon_MouseHover(object sender, EventArgs e)
+        {
+            icon.BorderColor = Color.Gold;
+        }
+
+        public void redraw()
+        {
             if (isSelected)
             {
                 icon.BackColor = Color.White;
@@ -68,19 +99,6 @@ namespace PetvetPOS_Inventory_System
                 icon.BackColor = origColor;
             }
         }
-
-        private void icon_Click(object sender, EventArgs e)
-        {
-            //isSelected = true;
-            //select();
-            titlebar.setTitle = menuName.Text;
-        }
-
-        private void icon_MouseHover(object sender, EventArgs e)
-        {
-            icon.BorderColor = Color.Gold;
-        }
-
         private void icon_MouseEnter(object sender, EventArgs e)
         {
             icon.BorderColor = Color.Gold;
@@ -93,9 +111,8 @@ namespace PetvetPOS_Inventory_System
 
         public void unselect()
         {
+            //icon.BackColor = origColor;
             isSelected = false;
-            select();
-            icon.BackColor = origColor;
         }
 
         public Titlebar accessTitlebar
