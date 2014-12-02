@@ -17,6 +17,7 @@ namespace PetvetPOS_Inventory_System
         {
             InitializeComponent();
             menuBar1.controlTitleBar(titlebar1);
+            titlebar1.setMenuControls(menuBar1.getMenuControl);
         }
 
         private void ovalShape1_Click(object sender, EventArgs e)

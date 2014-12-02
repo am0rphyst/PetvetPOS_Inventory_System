@@ -12,6 +12,19 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class Titlebar : UserControl
     {
+        MenuControl[] menuControls;
+
+        public void setMenuControls(MenuControl[] menuControls)
+        {
+            this.menuControls = menuControls;
+            foreach (MenuControl menuControl in menuControls)
+            {
+                menuControl.accessTitlebar = this;
+            }
+        }
+
+
+
         public Titlebar()
         {
             InitializeComponent();

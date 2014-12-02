@@ -17,6 +17,7 @@ namespace PetvetPOS_Inventory_System
         Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape1;
         bool isSelected;
         Color origColor;
+        Titlebar titlebar;
 
         public MenuControl()
         {
@@ -70,8 +71,9 @@ namespace PetvetPOS_Inventory_System
 
         private void icon_Click(object sender, EventArgs e)
         {
-            isSelected = true;
-            select();
+            //isSelected = true;
+            //select();
+            titlebar.setTitle = menuName.Text;
         }
 
         private void icon_MouseHover(object sender, EventArgs e)
@@ -95,5 +97,14 @@ namespace PetvetPOS_Inventory_System
             select();
             icon.BackColor = origColor;
         }
+
+        public Titlebar accessTitlebar
+        {
+            set
+            {
+                titlebar = value;
+            }
+        }
+
     }
 }

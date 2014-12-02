@@ -92,5 +92,15 @@ namespace PetvetPOS_Inventory_System
             titlebar.Refresh();
             //unselectAll();
         }
+
+        public MenuControl[] getMenuControl
+        {
+            get
+            {
+                return menuControls;
+            }
+
+        }
+
     }
 }
