@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
+
 
 namespace PetvetPOS_Inventory_System
 {
@@ -16,9 +16,12 @@ namespace PetvetPOS_Inventory_System
         Label menuName;
         Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape1;
         Color origColor;
+
         Titlebar titlebar;
         MenuBar menuBar;
         bool isSelected;
+
+        Panel container, map;
 
         public MenuControl()
         {
@@ -38,6 +41,28 @@ namespace PetvetPOS_Inventory_System
             origColor = icon.BackColor;
         }
 
+        public Panel accessContainerPanel 
+        { 
+            get
+            {
+                return container;
+            }
+            set
+            {
+                container = value;
+            }
+        }
+
+        public Panel accessMapPanel
+        {
+            get{
+                return map;
+            }
+            set
+            {
+                container = value;
+            }
+        }
         public MenuBar accessMenuBar
         {
             set
