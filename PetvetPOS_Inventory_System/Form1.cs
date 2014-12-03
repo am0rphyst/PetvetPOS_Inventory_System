@@ -13,7 +13,7 @@ namespace PetvetPOS_Inventory_System
     public partial class frmMain : Form
     {
         MenuControl[] menuControls;
-        //
+        
         public frmMain()
         {
             InitializeComponent();

@@ -16,25 +16,24 @@ namespace PetvetPOS_Inventory_System
         MenuControl[] menuControls = new MenuControl[3];
         Titlebar titlebar;
 
+        public void initControlLocation()
+        {
+            int i = 0;
+            int startingPosition = 15;
+
+            foreach (MenuControl menuControl in menuControls)
+            {
+                menuControl.Location = new System.Drawing.Point(6, startingPosition);
+                menuControl.TabIndex = i;
+                this.Controls.Add(menuControl);
+                i++;
+                startingPosition += 150;
+            }
+        }
+
         public MenuBar()
         {
             InitializeComponent();
-            // set the menu Controls to the array
-            // menuControl1
-            menuControls[0] = menuControl1;
-            menuControls[0].setIconImage = Properties.Resources.iconmonstr_user_14_icon_256;
-            menuControls[0].accessIconLabel = "Users";
-            // menuControl2
-            menuControls[1] = menuControl2;
-            menuControls[1].setIconImage = Properties.Resources.iconmonstr_barcode_2_icon_256;
-            menuControls[1].accessIconLabel = "P.O.S.";
-            // menuContorl3
-            menuControls[2] = menuControl3;
-            menuControls[2].setIconImage = Properties.Resources.iconmonstr_archive_8_icon_256;
-            menuControls[2].accessIconLabel = "Inventory";
-            //   menuControls[0] = menuControl1;
-            // menuControls[0] = new MenuControl(Properties.Resources.iconmonstr_user_14_icon_256, "Users");
-            setMenuControl();
         }
 
         private void MenuBar_Load(object sender, EventArgs e)
@@ -102,13 +101,19 @@ namespace PetvetPOS_Inventory_System
             //unselectAll();
         }
 
-        public MenuControl[] getMenuControl
+        public MenuControl[] accessMenuControl
         {
             get
             {
                 return menuControls;
             }
 
+            set
+            {
+                menuControls = value;
+                setMenuControl();
+                initControlLocation();
+            }
         }
 
         public void setMenuControl()
@@ -116,6 +121,7 @@ namespace PetvetPOS_Inventory_System
             foreach(MenuControl menuControl in menuControls)
 	        {
                 menuControl.accessMenuBar = this;
+                menuControl.accessTitlebar = titlebar;
     	    }
         }
 
