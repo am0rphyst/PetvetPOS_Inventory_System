@@ -12,12 +12,27 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class frmMain : Form
     {
-        
+        MenuControl[] menuControls;
+        //
         public frmMain()
         {
             InitializeComponent();
+            menuControls = new MenuControl[3];
+            menuControls[0] = new MenuControl();
+            menuControls[0].setIconImage = Properties.Resources.iconmonstr_user_14_icon_256;
+            menuControls[0].accessIconLabel = "Users";
+            // menuControl2
+            menuControls[1] = new MenuControl();
+            menuControls[1].setIconImage = Properties.Resources.iconmonstr_barcode_2_icon_256;
+            menuControls[1].accessIconLabel = "P.O.S.";
+            // menuContorl3
+            menuControls[2] = new MenuControl();
+            menuControls[2].setIconImage = Properties.Resources.iconmonstr_archive_8_icon_256;
+            menuControls[2].accessIconLabel = "Inventory";
+
+            menuBar1.accessMenuControl = menuControls;
             menuBar1.controlTitleBar(titlebar1);
-            titlebar1.setMenuControls(menuBar1.getMenuControl);
+            titlebar1.setMenuControls(menuBar1.accessMenuControl);
 
         }
 
