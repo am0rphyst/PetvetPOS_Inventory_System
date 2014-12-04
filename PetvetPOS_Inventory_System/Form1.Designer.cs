@@ -34,22 +34,16 @@ namespace PetvetPOS_Inventory_System
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.userAdministration1 = new PetvetPOS_Inventory_System.UserAdministration();
             this.userSettingsControl1 = new PetvetPOS_Inventory_System.UserSettingsControl();
-            this.menuBar1 = new PetvetPOS_Inventory_System.MenuBar();
             this.titlebar1 = new PetvetPOS_Inventory_System.Titlebar();
             this.panelHeader.SuspendLayout();
-            this.panelSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -79,7 +73,6 @@ namespace PetvetPOS_Inventory_System
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(119)))), ((int)(((byte)(131)))));
             this.panelSidebar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.panelSidebar.Controls.Add(this.menuBar1);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 78);
             this.panelSidebar.Name = "panelSidebar";
@@ -109,18 +102,6 @@ namespace PetvetPOS_Inventory_System
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 36);
             this.panel2.TabIndex = 3;
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rectangleShape1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(147)))), ((int)(((byte)(99)))));
-            this.rectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape1.BorderWidth = 2;
-            this.rectangleShape1.CornerRadius = 14;
-            this.rectangleShape1.Location = new System.Drawing.Point(194, 111);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(179, 28);
             // 
             // panel3
             // 
@@ -155,34 +136,12 @@ namespace PetvetPOS_Inventory_System
             // 
             // mainPanel
             // 
-            this.mainPanel.BackColor = System.Drawing.Color.Gainsboro;
-            this.mainPanel.Controls.Add(this.userAdministration1);
-            this.mainPanel.Controls.Add(this.shapeContainer2);
+            this.mainPanel.BackColor = System.Drawing.Color.White;
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(107, 114);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(677, 583);
             this.mainPanel.TabIndex = 4;
-            // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1});
-            this.shapeContainer2.Size = new System.Drawing.Size(677, 583);
-            this.shapeContainer2.TabIndex = 1;
-            this.shapeContainer2.TabStop = false;
-            // 
-            // userAdministration1
-            // 
-            this.userAdministration1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.userAdministration1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userAdministration1.Location = new System.Drawing.Point(0, 0);
-            this.userAdministration1.Name = "userAdministration1";
-            this.userAdministration1.Size = new System.Drawing.Size(677, 583);
-            this.userAdministration1.TabIndex = 0;
             // 
             // userSettingsControl1
             // 
@@ -191,14 +150,6 @@ namespace PetvetPOS_Inventory_System
             this.userSettingsControl1.Name = "userSettingsControl1";
             this.userSettingsControl1.Size = new System.Drawing.Size(214, 36);
             this.userSettingsControl1.TabIndex = 0;
-            // 
-            // menuBar1
-            // 
-            this.menuBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.menuBar1.Location = new System.Drawing.Point(0, 0);
-            this.menuBar1.Name = "menuBar1";
-            this.menuBar1.Size = new System.Drawing.Size(105, 617);
-            this.menuBar1.TabIndex = 0;
             // 
             // titlebar1
             // 
@@ -230,12 +181,10 @@ namespace PetvetPOS_Inventory_System
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
-            this.panelSidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.mainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -252,11 +201,8 @@ namespace PetvetPOS_Inventory_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private UserAdministration userAdministration1;
         private System.Windows.Forms.Panel panel2;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private UserSettingsControl userSettingsControl1;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
     }
 }
 

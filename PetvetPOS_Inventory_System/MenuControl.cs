@@ -150,5 +150,10 @@ namespace PetvetPOS_Inventory_System
             }
         }
 
+        private void MenuControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

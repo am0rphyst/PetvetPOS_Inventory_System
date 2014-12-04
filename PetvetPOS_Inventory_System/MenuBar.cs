@@ -13,7 +13,7 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class MenuBar : UserControl
     {
-        MenuControl[] menuControls = new MenuControl[3];
+        MenuControl[] menuControls;
         Titlebar titlebar;
 
         public void initControlLocation()
@@ -110,7 +110,7 @@ namespace PetvetPOS_Inventory_System
 
             set
             {
-                menuControls = value;
+                this.menuControls = value;
                 setMenuControl();
                 initControlLocation();
             }

@@ -13,13 +13,14 @@ namespace PetvetPOS_Inventory_System
     public partial class frmMain : Form
     {
         private MenuBar menuBar1;
+        private LoginPane loginPane;
         MenuControl[] menuControls;
         
         public frmMain()
         {
             InitializeComponent();
             initSideBar();
-
+            
             menuControls = new MenuControl[3];
             menuControls[0] = new MenuControl();
             menuControls[0].setIconImage = Properties.Resources.iconmonstr_user_14_icon_256;
@@ -45,7 +46,15 @@ namespace PetvetPOS_Inventory_System
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            initLoginPane();
+        }
 
+        private void initLoginPane()
+        {
+            this.loginPane = new PetvetPOS_Inventory_System.LoginPane();
+            this.loginPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Controls.Add(this.loginPane);
         }
 
         private void panelSidebar_Paint(object sender, PaintEventArgs e)
@@ -70,6 +79,7 @@ namespace PetvetPOS_Inventory_System
 
         public void initSideBar()
         {
+            this.menuBar1 = new PetvetPOS_Inventory_System.MenuBar();
             this.menuBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuBar1.Location = new System.Drawing.Point(0, 0);
             this.menuBar1.Name = "menuBar1";

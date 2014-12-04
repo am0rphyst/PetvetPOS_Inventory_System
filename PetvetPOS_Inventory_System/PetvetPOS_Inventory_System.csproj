@@ -70,6 +70,12 @@
     <Compile Include="MenuControl.Designer.cs">
       <DependentUpon>MenuControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="PawPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PawPrint.Designer.cs">
+      <DependentUpon>PawPrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="POS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuControl.resx">
       <DependentUpon>MenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PawPrint.resx">
+      <DependentUpon>PawPrint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS.resx">
       <DependentUpon>POS.cs</DependentUpon>

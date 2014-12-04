@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace PetvetPOS_Inventory_System
 {
-    public partial class LoginPane : UserControl
+    public partial class PawPrint : UserControl
     {
-        public LoginPane()
+        public PawPrint()
         {
             InitializeComponent();
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
