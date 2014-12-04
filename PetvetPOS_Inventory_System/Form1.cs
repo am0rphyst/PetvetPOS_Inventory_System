@@ -12,11 +12,14 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class frmMain : Form
     {
+        private MenuBar menuBar1;
         MenuControl[] menuControls;
         
         public frmMain()
         {
             InitializeComponent();
+            initSideBar();
+
             menuControls = new MenuControl[3];
             menuControls[0] = new MenuControl();
             menuControls[0].setIconImage = Properties.Resources.iconmonstr_user_14_icon_256;
@@ -33,7 +36,6 @@ namespace PetvetPOS_Inventory_System
             menuBar1.accessMenuControl = menuControls;
             menuBar1.controlTitleBar(titlebar1);
             titlebar1.setMenuControls(menuBar1.accessMenuControl);
-
         }
 
         private void ovalShape1_Click(object sender, EventArgs e)
@@ -64,6 +66,16 @@ namespace PetvetPOS_Inventory_System
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void initSideBar()
+        {
+            this.menuBar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuBar1.Location = new System.Drawing.Point(0, 0);
+            this.menuBar1.Name = "menuBar1";
+            this.menuBar1.Size = new System.Drawing.Size(105, 617);
+            this.menuBar1.TabIndex = 0;
+            this.panelSidebar.Controls.Add(this.menuBar1);
         }
     }
 }

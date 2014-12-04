@@ -79,7 +79,7 @@ namespace PetvetPOS_Inventory_System
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(119)))), ((int)(((byte)(131)))));
             this.panelSidebar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSidebar.Controls.Add(this.menuBar1);
+            //this.panelSidebar.Controls.Add(this.menuBar1);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 78);
             this.panelSidebar.Name = "panelSidebar";
@@ -245,7 +245,7 @@ namespace PetvetPOS_Inventory_System
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelSidebar;
-        private MenuBar menuBar1;
+
         private Titlebar titlebar1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel mainPanel;
