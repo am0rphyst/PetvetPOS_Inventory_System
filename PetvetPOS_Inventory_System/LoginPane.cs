@@ -70,6 +70,7 @@ namespace PetvetPOS_Inventory_System
             {
                 UserControl userAdminPane = new UserAdministration();
                 masterController.changeCurrentContent(userAdminPane);
+                masterController.setMenuBar();
             }
 
            // createSession(form.accessSession);

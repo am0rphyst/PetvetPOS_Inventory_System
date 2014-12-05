@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.label1 = new System.Windows.Forms.Label();
+            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -44,15 +44,6 @@
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
             // 
-            // ovalShape1
-            // 
-            this.ovalShape1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape1.Location = new System.Drawing.Point(26, 30);
-            this.ovalShape1.Name = "ovalShape1";
-            this.ovalShape1.Size = new System.Drawing.Size(75, 47);
-            this.ovalShape1.Click += new System.EventHandler(this.ovalShape1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -62,6 +53,15 @@
             this.label1.Size = new System.Drawing.Size(22, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "OK";
+            // 
+            // ovalShape1
+            // 
+            this.ovalShape1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape1.Location = new System.Drawing.Point(26, 30);
+            this.ovalShape1.Name = "ovalShape1";
+            this.ovalShape1.Size = new System.Drawing.Size(75, 47);
+            this.ovalShape1.Click += new System.EventHandler(this.ovalShape1_Click);
             // 
             // qwerty
             // 

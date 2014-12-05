@@ -21,7 +21,7 @@ namespace PetvetPOS_Inventory_System
         MenuBar menuBar;
         bool isSelected;
 
-        Panel container, map;
+        UserControl mapControl;
         MasterController masterController;
 
         public MenuControl()
@@ -42,28 +42,18 @@ namespace PetvetPOS_Inventory_System
             origColor = icon.BackColor;
         }
 
-        public Panel accessContainerPanel 
-        { 
+        public UserControl accessMapPanel
+        {
             get
             {
-                return container;
+                return mapControl;
             }
             set
             {
-                container = value;
+                mapControl = value;
             }
         }
 
-        public Panel accessMapPanel
-        {
-            get{
-                return map;
-            }
-            set
-            {
-                container = value;
-            }
-        }
         public MenuBar accessMenuBar
         {
             set
@@ -107,6 +97,7 @@ namespace PetvetPOS_Inventory_System
             menuBar.unselectAll();
             this.select();
             menuBar.updateMenus();
+            masterController.changeCurrentContent(mapControl);
         }
 
         private void icon_MouseHover(object sender, EventArgs e)

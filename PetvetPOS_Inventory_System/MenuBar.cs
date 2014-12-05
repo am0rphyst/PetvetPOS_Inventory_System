@@ -125,7 +125,7 @@ namespace PetvetPOS_Inventory_System
             {
                 this.menuControls = value;
                 setMenuControl();
-                initControlLocation();
+               // initControlLocation();
             }
         }
 

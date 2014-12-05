@@ -72,5 +72,10 @@ namespace PetvetPOS_Inventory_System
                 masterController = value;
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

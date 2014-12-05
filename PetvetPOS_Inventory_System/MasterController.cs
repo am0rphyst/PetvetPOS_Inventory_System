@@ -47,7 +47,11 @@ namespace PetvetPOS_Inventory_System
             this.currentContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.currentContent.Location = new System.Drawing.Point(0, 0);
             this.panel.Controls.Add(this.currentContent);
-            
+        }
+
+        public void setMenuBar()
+        {
+            menuBar.initControlLocation();
         }
     }
 }

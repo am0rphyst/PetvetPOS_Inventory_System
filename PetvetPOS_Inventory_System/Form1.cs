@@ -24,10 +24,15 @@ namespace PetvetPOS_Inventory_System
             initSideBar();
             masterController = new MasterController(mainPanel, menuBar1, titlebar1,this);
 
-            menuControls = new MenuControl[3];
+            menuControls = new MenuControl[4];
             menuControls[0] = new MenuControl(Properties.Resources.iconmonstr_user_14_icon_256, "Users");
+            menuControls[0].accessMapPanel = new UserAdministration();
             menuControls[1] = new MenuControl(Properties.Resources.iconmonstr_barcode_2_icon_256,"P.O.S.");
+            menuControls[1].accessMapPanel = new POS();
             menuControls[2] = new MenuControl(Properties.Resources.iconmonstr_archive_8_icon_256,"Inventory");
+            menuControls[2].accessMapPanel = new Inventory();
+            menuControls[3] = new MenuControl(Properties.Resources.iconmonstr_document_file_2_icon_256, "Reports");
+            menuControls[3].accessMapPanel = new Reports();
 
             menuBar1.accessMenuControl = menuControls;
             menuBar1.controlTitleBar(titlebar1);
