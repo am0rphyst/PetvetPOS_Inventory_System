@@ -15,6 +15,7 @@ namespace PetvetPOS_Inventory_System
     {
         MenuControl[] menuControls;
         Titlebar titlebar;
+        MasterController masterController;
 
         public void initControlLocation()
         {
@@ -34,6 +35,18 @@ namespace PetvetPOS_Inventory_System
         public MenuBar()
         {
             InitializeComponent();
+        }
+
+        public MasterController accessMasterController
+        {
+            get
+            {
+                return masterController;
+            }
+            set
+            {
+                masterController = value;
+            }
         }
 
         private void MenuBar_Load(object sender, EventArgs e)
@@ -122,6 +135,7 @@ namespace PetvetPOS_Inventory_System
 	        {
                 menuControl.accessMenuBar = this;
                 menuControl.accessTitlebar = titlebar;
+                menuControl.accessMasterController = this.masterController;
     	    }
         }
 

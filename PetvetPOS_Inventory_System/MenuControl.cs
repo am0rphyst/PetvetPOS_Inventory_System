@@ -22,6 +22,7 @@ namespace PetvetPOS_Inventory_System
         bool isSelected;
 
         Panel container, map;
+        MasterController masterController;
 
         public MenuControl()
         {
@@ -155,5 +156,21 @@ namespace PetvetPOS_Inventory_System
 
         }
 
+        private void lblDesc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public MasterController accessMasterController 
+        {
+            get
+            {
+                return masterController;
+            }
+            set
+            {
+                this.masterController = value;
+            }
+        }
     }
 }

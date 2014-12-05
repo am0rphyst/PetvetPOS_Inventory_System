@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.ovalShape7 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape5 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape4 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape2 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.icon = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.lblDesc = new System.Windows.Forms.Label();
-            this.ovalShape2 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape4 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape5 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape7 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -51,6 +51,42 @@
             this.shapeContainer1.Size = new System.Drawing.Size(92, 128);
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
+            // 
+            // ovalShape7
+            // 
+            this.ovalShape7.BackColor = System.Drawing.Color.White;
+            this.ovalShape7.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape7.BorderColor = System.Drawing.Color.White;
+            this.ovalShape7.Location = new System.Drawing.Point(67, 20);
+            this.ovalShape7.Name = "ovalShape7";
+            this.ovalShape7.Size = new System.Drawing.Size(13, 8);
+            // 
+            // ovalShape5
+            // 
+            this.ovalShape5.BackColor = System.Drawing.Color.White;
+            this.ovalShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape5.BorderColor = System.Drawing.Color.White;
+            this.ovalShape5.Location = new System.Drawing.Point(11, 21);
+            this.ovalShape5.Name = "ovalShape5";
+            this.ovalShape5.Size = new System.Drawing.Size(13, 8);
+            // 
+            // ovalShape4
+            // 
+            this.ovalShape4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
+            this.ovalShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape4.BorderColor = System.Drawing.Color.White;
+            this.ovalShape4.Location = new System.Drawing.Point(63, 10);
+            this.ovalShape4.Name = "ovalShape4";
+            this.ovalShape4.Size = new System.Drawing.Size(20, 19);
+            // 
+            // ovalShape2
+            // 
+            this.ovalShape2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
+            this.ovalShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape2.BorderColor = System.Drawing.Color.White;
+            this.ovalShape2.Location = new System.Drawing.Point(5, 12);
+            this.ovalShape2.Name = "ovalShape2";
+            this.ovalShape2.Size = new System.Drawing.Size(20, 19);
             // 
             // icon
             // 
@@ -78,42 +114,7 @@
             this.lblDesc.TabIndex = 1;
             this.lblDesc.Text = "Menu Name";
             this.lblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ovalShape2
-            // 
-            this.ovalShape2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
-            this.ovalShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape2.BorderColor = System.Drawing.Color.White;
-            this.ovalShape2.Location = new System.Drawing.Point(5, 12);
-            this.ovalShape2.Name = "ovalShape2";
-            this.ovalShape2.Size = new System.Drawing.Size(20, 19);
-            // 
-            // ovalShape4
-            // 
-            this.ovalShape4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
-            this.ovalShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape4.BorderColor = System.Drawing.Color.White;
-            this.ovalShape4.Location = new System.Drawing.Point(63, 10);
-            this.ovalShape4.Name = "ovalShape4";
-            this.ovalShape4.Size = new System.Drawing.Size(20, 19);
-            // 
-            // ovalShape5
-            // 
-            this.ovalShape5.BackColor = System.Drawing.Color.White;
-            this.ovalShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape5.BorderColor = System.Drawing.Color.White;
-            this.ovalShape5.Location = new System.Drawing.Point(11, 21);
-            this.ovalShape5.Name = "ovalShape5";
-            this.ovalShape5.Size = new System.Drawing.Size(13, 8);
-            // 
-            // ovalShape7
-            // 
-            this.ovalShape7.BackColor = System.Drawing.Color.White;
-            this.ovalShape7.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape7.BorderColor = System.Drawing.Color.White;
-            this.ovalShape7.Location = new System.Drawing.Point(67, 20);
-            this.ovalShape7.Name = "ovalShape7";
-            this.ovalShape7.Size = new System.Drawing.Size(13, 8);
+            this.lblDesc.Click += new System.EventHandler(this.lblDesc_Click);
             // 
             // MenuControl
             // 

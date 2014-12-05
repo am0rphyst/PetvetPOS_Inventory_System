@@ -13,6 +13,7 @@ namespace PetvetPOS_Inventory_System
     public partial class Titlebar : UserControl
     {
         MenuControl[] menuControls;
+        MasterController masterController;
 
         public void setMenuControls(MenuControl[] menuControls)
         {
@@ -29,6 +30,11 @@ namespace PetvetPOS_Inventory_System
         {
             InitializeComponent();
             lblTitle.Text = "HOME";
+
+            qwerty qwe = new qwerty();
+            qwe.Location = new Point(0,0);
+            qwe.Size = new Size(134, 89);
+            this.panel1.Controls.Add(qwe);
         }
 
         public string setTitle 
@@ -52,7 +58,19 @@ namespace PetvetPOS_Inventory_System
         }
         private void label1_Click(object sender, EventArgs e)
         {
+           
+        }
 
+        public MasterController accessMasterController 
+        { 
+            get
+            {
+                return masterController;    
+            }
+            set
+            {
+                masterController = value;
+            }
         }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.partA = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.partB = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.partA = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -49,18 +49,6 @@
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
             // 
-            // partA
-            // 
-            this.partA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
-            this.partA.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.partA.BorderColor = System.Drawing.Color.White;
-            this.partA.CornerRadius = 3;
-            this.partA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.partA.Location = new System.Drawing.Point(-7, -6);
-            this.partA.Name = "partA";
-            this.partA.Size = new System.Drawing.Size(147, 44);
-            this.partA.Click += new System.EventHandler(this.rectangleShape1_Click);
-            // 
             // partB
             // 
             this.partB.BackColor = System.Drawing.Color.DarkRed;
@@ -73,12 +61,25 @@
             this.partB.Visible = false;
             this.partB.Click += new System.EventHandler(this.rectangleShape1_Click);
             // 
+            // partA
+            // 
+            this.partA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.partA.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.partA.BorderColor = System.Drawing.Color.White;
+            this.partA.CornerRadius = 3;
+            this.partA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.partA.Location = new System.Drawing.Point(-7, -6);
+            this.partA.Name = "partA";
+            this.partA.Size = new System.Drawing.Size(147, 44);
+            this.partA.Click += new System.EventHandler(this.rectangleShape1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 20);
