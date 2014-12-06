@@ -13,28 +13,21 @@ namespace PetvetPOS_Inventory_System
     public partial class LoginPane : UserControl
     {
         frmMain form;
-        Panel mainPanel;
-        UserControl nextControl, currentControl;
+        Panel userControlPanel;
         User user;
         MasterController masterController;
-
-        public void nextPane()
-        {
-            //mainPanel.Controls.re
-            nextControl = new UserAdministration();
-            nextControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            nextControl.Location = new System.Drawing.Point(0, 0);
-            this.mainPanel.Controls.Add(nextControl);
-        }
 
         public LoginPane()
         {
             InitializeComponent();
         }
 
-        public void setMainPanel(Panel panel)
+        public Panel setUserControlPanel 
         {
-            mainPanel = panel;
+            set
+            {
+                userControlPanel = value;
+            }
         }
 
         public frmMain setForm 
@@ -58,6 +51,17 @@ namespace PetvetPOS_Inventory_System
 
         }
 
+        private void showUserSettingsControl(string username)
+        {
+            UserSettingsControl userSettingsControl = new UserSettingsControl();
+            userSettingsControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            userSettingsControl.Location = new System.Drawing.Point(0, 0);
+            this.userControlPanel.Controls.Add(userSettingsControl);
+            userSettingsControl.accessMasterController = masterController;
+            userSettingsControl.accessUserControlPanel = userControlPanel;
+            userSettingsControl.accessLoginName = username;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
@@ -65,12 +69,14 @@ namespace PetvetPOS_Inventory_System
 
             Login login = new Login();
             user = login.userLogin(username, password);
-           
+            
             if (user != null)
             {
+                username = user.getUsername;
                 UserControl userAdminPane = new UserAdministration();
                 masterController.changeCurrentContent(userAdminPane);
                 masterController.setMenuBar();
+                showUserSettingsControl(username);
             }
 
            // createSession(form.accessSession);
@@ -86,6 +92,11 @@ namespace PetvetPOS_Inventory_System
             {
                 masterController = value;   
             } 
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
         //public void createSession(Session session){
         //    session = new Session(user);

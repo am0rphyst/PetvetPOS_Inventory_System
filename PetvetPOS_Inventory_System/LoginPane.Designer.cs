@@ -391,6 +391,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(422, 64);
             this.panel6.TabIndex = 0;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // LoginPane
             // 

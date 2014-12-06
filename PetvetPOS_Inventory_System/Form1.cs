@@ -66,6 +66,8 @@ namespace PetvetPOS_Inventory_System
             this.mainPanel.Controls.Add(this.loginPane);
             loginPane.accessMasterController = masterController;
             masterController.accessCurrentContent = loginPane;
+            loginPane.setUserControlPanel = userControlPanel;
+
         }
 
         private void panelSidebar_Paint(object sender, PaintEventArgs e)

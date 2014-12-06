@@ -32,6 +32,15 @@ namespace PetvetPOS_Inventory_System
             }
         }
 
+        public void removeMenuControls()
+        {
+            foreach (MenuControl menuControl in menuControls)
+            {
+                this.Controls.Remove(menuControl);
+            }
+            
+        }
+
         public MenuBar()
         {
             InitializeComponent();

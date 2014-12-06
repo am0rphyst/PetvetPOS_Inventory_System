@@ -16,6 +16,5 @@ E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.PawPrint.resources
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.Slash.resources
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.qwerty.resources
-E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.csprojResolveAssemblyReference.cache
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.Inventory.resources
 E:\Documents\Soft Eng Project 2014\Software\PetvetPOS_Inventory_System\PetvetPOS_Inventory_System\obj\Debug\PetvetPOS_Inventory_System.Reports.resources

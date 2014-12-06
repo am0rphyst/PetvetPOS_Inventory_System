@@ -53,5 +53,16 @@ namespace PetvetPOS_Inventory_System
         {
             menuBar.initControlLocation();
         }
+
+        public void clearMenuBar()
+        {
+            menuBar.removeMenuControls();
+        }
+
+        public void clearTitleHeader()
+        {
+            titleBar.setTitle = "HOME";
+            titleBar.setImage = null;
+        }
     }
 }

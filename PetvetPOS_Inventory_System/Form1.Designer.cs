@@ -33,7 +33,7 @@ namespace PetvetPOS_Inventory_System
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.userControlPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
@@ -80,7 +80,7 @@ namespace PetvetPOS_Inventory_System
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.userControlPanel);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(107, 78);
@@ -89,24 +89,24 @@ namespace PetvetPOS_Inventory_System
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // userControlPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(214, 36);
-            this.panel2.TabIndex = 3;
+            this.userControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.userControlPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userControlPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.userControlPanel.Location = new System.Drawing.Point(0, 0);
+            this.userControlPanel.Name = "userControlPanel";
+            this.userControlPanel.Size = new System.Drawing.Size(214, 36);
+            this.userControlPanel.TabIndex = 3;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(447, 0);
+            this.panel3.Location = new System.Drawing.Point(507, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(230, 36);
+            this.panel3.Size = new System.Drawing.Size(170, 36);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -131,6 +131,7 @@ namespace PetvetPOS_Inventory_System
             // 
             // titlebar1
             // 
+            this.titlebar1.accessMasterController = null;
             this.titlebar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(99)))));
             this.titlebar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.titlebar1.Location = new System.Drawing.Point(0, 0);
@@ -150,7 +151,7 @@ namespace PetvetPOS_Inventory_System
             this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelHeader);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimumSize = new System.Drawing.Size(800, 736);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -177,7 +178,7 @@ namespace PetvetPOS_Inventory_System
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel userControlPanel;
     }
 }
 

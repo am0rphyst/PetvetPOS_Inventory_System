@@ -24,5 +24,13 @@ namespace PetvetPOS_Inventory_System
             }
             return false;
         }
+
+        public string getUsername 
+        { 
+            get
+            {
+             return username;   
+            }
+        }
     }
 }
