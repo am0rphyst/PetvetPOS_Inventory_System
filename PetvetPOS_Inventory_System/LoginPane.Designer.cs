@@ -33,6 +33,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.newlabel = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -112,6 +113,15 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Welcome! You may now login.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
+            // newlabel ----------------------------------------------------------------------------------------
+            //
+            this.newlabel.AutoSize = true;
+            this.newlabel.ForeColor = System.Drawing.Color.Red;
+            this.newlabel.Size = new System.Drawing.Size(300, 200);
+            this.newlabel.Location = new System.Drawing.Point(100, 85);
+            this.newlabel.Name = "newlabel";
+            this.newlabel.Text = "ETO YUNG LABEL";
             // 
             // label1
             // 
@@ -421,6 +431,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label newlabel;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
