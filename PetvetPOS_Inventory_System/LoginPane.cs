@@ -24,8 +24,6 @@ namespace PetvetPOS_Inventory_System
         {
             InitializeComponent();
             accessMasterController = masterController;
-            //masterController.accessCurrentContent = this;
-            //masterController.changeCurrentContent(this);
         }
 
         private void showUserSettingsControl(string username)
