@@ -95,10 +95,5 @@ namespace PetvetPOS_Inventory_System
             } 
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
     }
 }

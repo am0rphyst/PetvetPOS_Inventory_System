@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PetvetPOS_Inventory_System.exe" size="122880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PetvetPOS_Inventory_System.exe" size="123392">
       <assemblyIdentity name="PetvetPOS_Inventory_System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bXXcdk1qv/Wz9rRjtBe3yobN3wzHQvnYXwRbs0IhuYE=</dsig:DigestValue>
+        <dsig:DigestValue>rwqQ4THvDMimd1Ruoi93UGNRNEuCxiYe0sr3HIUbYaw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
