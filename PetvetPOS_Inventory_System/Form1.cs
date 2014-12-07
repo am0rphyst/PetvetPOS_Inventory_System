@@ -88,5 +88,10 @@ namespace PetvetPOS_Inventory_System
             titlebar1.TabStop = false;
             this.panelHeader.Controls.Add(this.titlebar1);
         }
+
+        private void frmMain_KeyDown(object sender, KeyEventArgs e)
+        {
+            MessageBox.Show("Oh");
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace PetvetPOS_Inventory_System
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(784, 78);
+            this.panelHeader.Size = new System.Drawing.Size(984, 78);
             this.panelHeader.TabIndex = 0;
             // 
             // panelSidebar
@@ -69,7 +69,7 @@ namespace PetvetPOS_Inventory_System
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(107, 78);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(677, 36);
+            this.panel1.Size = new System.Drawing.Size(877, 36);
             this.panel1.TabIndex = 0;
             this.panel1.TabStop = true;
             // 
@@ -89,7 +89,7 @@ namespace PetvetPOS_Inventory_System
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
             this.panel3.Controls.Add(this.lblDate);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(423, 0);
+            this.panel3.Location = new System.Drawing.Point(623, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(254, 36);
             this.panel3.TabIndex = 0;
@@ -112,7 +112,7 @@ namespace PetvetPOS_Inventory_System
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(107, 114);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(677, 583);
+            this.mainPanel.Size = new System.Drawing.Size(877, 583);
             this.mainPanel.TabIndex = 0;
             this.mainPanel.TabStop = true;
             // 
@@ -120,19 +120,20 @@ namespace PetvetPOS_Inventory_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 697);
+            this.ClientSize = new System.Drawing.Size(984, 697);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelHeader);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MinimumSize = new System.Drawing.Size(800, 736);
+            this.MinimumSize = new System.Drawing.Size(1000, 736);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

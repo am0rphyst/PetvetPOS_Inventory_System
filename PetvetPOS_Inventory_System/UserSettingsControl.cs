@@ -86,6 +86,18 @@ namespace PetvetPOS_Inventory_System
             returnHome();
         }
 
+        private void UserSettingsControl_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void UserSettingsControl_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == (Keys)Keys.F12)
+            {
+                returnHome();
+            }
+        }
         
     }
 }

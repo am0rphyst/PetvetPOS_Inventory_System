@@ -68,19 +68,20 @@
             this.lOGOUTToolStripMenuItem,
             this.sETTINGSToolStripMenuItem});
             this.logoutContextMenuStrips.Name = "logoutContextMenuStrips";
-            this.logoutContextMenuStrips.Size = new System.Drawing.Size(127, 48);
+            this.logoutContextMenuStrips.Size = new System.Drawing.Size(174, 48);
             // 
             // lOGOUTToolStripMenuItem
             // 
             this.lOGOUTToolStripMenuItem.Name = "lOGOUTToolStripMenuItem";
-            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.lOGOUTToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F12)));
+            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.lOGOUTToolStripMenuItem.Text = "LOGOUT";
             this.lOGOUTToolStripMenuItem.Click += new System.EventHandler(this.lOGOUTToolStripMenuItem_Click);
             // 
             // sETTINGSToolStripMenuItem
             // 
             this.sETTINGSToolStripMenuItem.Name = "sETTINGSToolStripMenuItem";
-            this.sETTINGSToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.sETTINGSToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.sETTINGSToolStripMenuItem.Text = "SETTINGS";
             // 
             // loginName
@@ -113,6 +114,8 @@
             this.Name = "UserSettingsControl";
             this.Size = new System.Drawing.Size(186, 33);
             this.Load += new System.EventHandler(this.UserSettingsControl_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserSettingsControl_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UserSettingsControl_KeyPress);
             this.logoutContextMenuStrips.ResumeLayout(false);
             this.ResumeLayout(false);
 
