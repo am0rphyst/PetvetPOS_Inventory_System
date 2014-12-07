@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pawPrint2 = new PetvetPOS_Inventory_System.PawPrint();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,16 +49,15 @@
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pawPrint1 = new PetvetPOS_Inventory_System.PawPrint();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.pawPrint4 = new PetvetPOS_Inventory_System.PawPrint();
             this.pawPrint3 = new PetvetPOS_Inventory_System.PawPrint();
-            this.pawPrint2 = new PetvetPOS_Inventory_System.PawPrint();
-            this.pawPrint1 = new PetvetPOS_Inventory_System.PawPrint();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,8 +75,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(340, 411);
+            this.panel1.Size = new System.Drawing.Size(420, 411);
             this.panel1.TabIndex = 0;
+            // 
+            // pawPrint2
+            // 
+            this.pawPrint2.Location = new System.Drawing.Point(237, 332);
+            this.pawPrint2.Name = "pawPrint2";
+            this.pawPrint2.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint2.TabIndex = 8;
             // 
             // panel5
             // 
@@ -91,17 +98,17 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(42, 103);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(298, 202);
+            this.panel5.Size = new System.Drawing.Size(378, 220);
             this.panel5.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(48, 42);
+            this.label3.Location = new System.Drawing.Point(30, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 41);
+            this.label3.Size = new System.Drawing.Size(309, 41);
             this.label3.TabIndex = 5;
             this.label3.Text = "Welcome! You may now login.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -110,26 +117,26 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(27, 93);
+            this.label1.Location = new System.Drawing.Point(47, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(90, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(102, 91);
+            this.txtUsername.Location = new System.Drawing.Point(143, 86);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(167, 20);
+            this.txtUsername.Size = new System.Drawing.Size(181, 20);
             this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(102, 128);
+            this.txtPassword.Location = new System.Drawing.Point(143, 123);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(167, 20);
+            this.txtPassword.Size = new System.Drawing.Size(181, 20);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -137,13 +144,13 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 132);
+            this.label2.Location = new System.Drawing.Point(48, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
+            this.label2.Text = "Password:";
             // 
             // btnLogin
             // 
@@ -153,7 +160,7 @@
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(122, 154);
+            this.btnLogin.Location = new System.Drawing.Point(154, 158);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 28);
             this.btnLogin.TabIndex = 2;
@@ -177,7 +184,7 @@
             this.ovalShape2,
             this.ovalShape1,
             this.rectangleShape1});
-            this.shapeContainer2.Size = new System.Drawing.Size(298, 202);
+            this.shapeContainer2.Size = new System.Drawing.Size(378, 220);
             this.shapeContainer2.TabIndex = 0;
             this.shapeContainer2.TabStop = false;
             // 
@@ -188,7 +195,7 @@
             this.ovalShape8.BorderColor = System.Drawing.Color.Black;
             this.ovalShape8.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape8.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape8.Location = new System.Drawing.Point(238, 178);
+            this.ovalShape8.Location = new System.Drawing.Point(312, 191);
             this.ovalShape8.Name = "ovalShape8";
             this.ovalShape8.Size = new System.Drawing.Size(11, 21);
             // 
@@ -199,7 +206,7 @@
             this.ovalShape7.BorderColor = System.Drawing.Color.Black;
             this.ovalShape7.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape7.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape7.Location = new System.Drawing.Point(50, 178);
+            this.ovalShape7.Location = new System.Drawing.Point(50, 194);
             this.ovalShape7.Name = "ovalShape7";
             this.ovalShape7.Size = new System.Drawing.Size(11, 21);
             // 
@@ -210,7 +217,7 @@
             this.ovalShape6.BorderColor = System.Drawing.Color.Black;
             this.ovalShape6.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape6.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape6.Location = new System.Drawing.Point(224, 20);
+            this.ovalShape6.Location = new System.Drawing.Point(297, 12);
             this.ovalShape6.Name = "ovalShape6";
             this.ovalShape6.Size = new System.Drawing.Size(11, 21);
             // 
@@ -221,7 +228,7 @@
             this.ovalShape5.BorderColor = System.Drawing.Color.Black;
             this.ovalShape5.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape5.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape5.Location = new System.Drawing.Point(239, 20);
+            this.ovalShape5.Location = new System.Drawing.Point(312, 12);
             this.ovalShape5.Name = "ovalShape5";
             this.ovalShape5.Size = new System.Drawing.Size(11, 21);
             // 
@@ -232,7 +239,7 @@
             this.ovalShape3.BorderColor = System.Drawing.Color.Black;
             this.ovalShape3.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape3.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape3.Location = new System.Drawing.Point(254, 19);
+            this.ovalShape3.Location = new System.Drawing.Point(327, 11);
             this.ovalShape3.Name = "ovalShape3";
             this.ovalShape3.Size = new System.Drawing.Size(11, 21);
             // 
@@ -243,7 +250,7 @@
             this.ovalShape4.BorderColor = System.Drawing.Color.Black;
             this.ovalShape4.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape4.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape4.Location = new System.Drawing.Point(62, 20);
+            this.ovalShape4.Location = new System.Drawing.Point(62, 7);
             this.ovalShape4.Name = "ovalShape4";
             this.ovalShape4.Size = new System.Drawing.Size(11, 21);
             // 
@@ -254,7 +261,7 @@
             this.ovalShape2.BorderColor = System.Drawing.Color.Black;
             this.ovalShape2.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape2.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape2.Location = new System.Drawing.Point(47, 21);
+            this.ovalShape2.Location = new System.Drawing.Point(47, 8);
             this.ovalShape2.Name = "ovalShape2";
             this.ovalShape2.Size = new System.Drawing.Size(11, 21);
             // 
@@ -265,7 +272,7 @@
             this.ovalShape1.BorderColor = System.Drawing.Color.Black;
             this.ovalShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.ovalShape1.FillStyle = Microsoft.VisualBasic.PowerPacks.FillStyle.LightDownwardDiagonal;
-            this.ovalShape1.Location = new System.Drawing.Point(32, 21);
+            this.ovalShape1.Location = new System.Drawing.Point(32, 8);
             this.ovalShape1.Name = "ovalShape1";
             this.ovalShape1.Size = new System.Drawing.Size(11, 21);
             // 
@@ -276,9 +283,9 @@
             this.rectangleShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
             this.rectangleShape1.BorderWidth = 2;
             this.rectangleShape1.CornerRadius = 10;
-            this.rectangleShape1.Location = new System.Drawing.Point(14, 33);
+            this.rectangleShape1.Location = new System.Drawing.Point(14, 20);
             this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(270, 157);
+            this.rectangleShape1.Size = new System.Drawing.Size(346, 185);
             // 
             // panel4
             // 
@@ -296,8 +303,15 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(340, 103);
+            this.panel3.Size = new System.Drawing.Size(420, 103);
             this.panel3.TabIndex = 5;
+            // 
+            // pawPrint1
+            // 
+            this.pawPrint1.Location = new System.Drawing.Point(74, 24);
+            this.pawPrint1.Name = "pawPrint1";
+            this.pawPrint1.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -309,9 +323,9 @@
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(340, 0);
+            this.panel2.Location = new System.Drawing.Point(420, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(422, 411);
+            this.panel2.Size = new System.Drawing.Size(342, 411);
             this.panel2.TabIndex = 1;
             // 
             // panel10
@@ -321,7 +335,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(10, 64);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(324, 302);
+            this.panel10.Size = new System.Drawing.Size(244, 302);
             this.panel10.TabIndex = 4;
             // 
             // panel9
@@ -330,7 +344,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(10, 366);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(324, 45);
+            this.panel9.Size = new System.Drawing.Size(244, 45);
             this.panel9.TabIndex = 3;
             // 
             // panel8
@@ -339,10 +353,24 @@
             this.panel8.Controls.Add(this.pawPrint4);
             this.panel8.Controls.Add(this.pawPrint3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(334, 64);
+            this.panel8.Location = new System.Drawing.Point(254, 64);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(88, 347);
             this.panel8.TabIndex = 2;
+            // 
+            // pawPrint4
+            // 
+            this.pawPrint4.Location = new System.Drawing.Point(0, 0);
+            this.pawPrint4.Name = "pawPrint4";
+            this.pawPrint4.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint4.TabIndex = 0;
+            // 
+            // pawPrint3
+            // 
+            this.pawPrint3.Location = new System.Drawing.Point(31, 62);
+            this.pawPrint3.Name = "pawPrint3";
+            this.pawPrint3.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint3.TabIndex = 0;
             // 
             // panel7
             // 
@@ -359,37 +387,9 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(422, 64);
+            this.panel6.Size = new System.Drawing.Size(342, 64);
             this.panel6.TabIndex = 0;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
-            // pawPrint4
-            // 
-            this.pawPrint4.Location = new System.Drawing.Point(0, 0);
-            this.pawPrint4.Name = "pawPrint4";
-            this.pawPrint4.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint4.TabIndex = 0;
-            // 
-            // pawPrint3
-            // 
-            this.pawPrint3.Location = new System.Drawing.Point(31, 62);
-            this.pawPrint3.Name = "pawPrint3";
-            this.pawPrint3.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint3.TabIndex = 0;
-            // 
-            // pawPrint2
-            // 
-            this.pawPrint2.Location = new System.Drawing.Point(237, 306);
-            this.pawPrint2.Name = "pawPrint2";
-            this.pawPrint2.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint2.TabIndex = 8;
-            // 
-            // pawPrint1
-            // 
-            this.pawPrint1.Location = new System.Drawing.Point(74, 24);
-            this.pawPrint1.Name = "pawPrint1";
-            this.pawPrint1.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint1.TabIndex = 0;
             // 
             // LoginPane
             // 

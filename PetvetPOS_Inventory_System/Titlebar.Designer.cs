@@ -62,7 +62,7 @@
             // slash1
             // 
             this.slash1.BackColor = System.Drawing.Color.Transparent;
-            this.slash1.Location = new System.Drawing.Point(79, 10);
+            this.slash1.Location = new System.Drawing.Point(15, 10);
             this.slash1.Name = "slash1";
             this.slash1.Size = new System.Drawing.Size(90, 89);
             this.slash1.TabIndex = 2;

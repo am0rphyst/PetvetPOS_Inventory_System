@@ -78,7 +78,7 @@ namespace PetvetPOS_Inventory_System
 
                 if (loginAttempt == 3)
                 {
-                    MessageBox.Show("Oopss.. 3 login failed attemp reach. Window will now close.");
+                    MessageBox.Show("Oopss.. 3 failed login attemps have reach. Window will now close.");
                     masterController.closeForm();
                 }
 

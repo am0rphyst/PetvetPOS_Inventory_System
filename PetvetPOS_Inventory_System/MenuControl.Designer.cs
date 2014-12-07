@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.ovalShape7 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape5 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
@@ -35,6 +36,10 @@
             this.ovalShape2 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.icon = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.lblDesc = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -95,6 +100,7 @@
             this.icon.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.icon.BorderColor = System.Drawing.Color.White;
             this.icon.BorderWidth = 2;
+            this.icon.ContextMenuStrip = this.contextMenuStrip1;
             this.icon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icon.Location = new System.Drawing.Point(11, 20);
             this.icon.Name = "icon";
@@ -115,6 +121,27 @@
             this.lblDesc.Text = "Menu Name";
             this.lblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            this.contextMenuStrip1.Text = "Edit";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem1.Text = "Add";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Text = "Edit";
+            // 
             // MenuControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,6 +152,7 @@
             this.Name = "MenuControl";
             this.Size = new System.Drawing.Size(92, 128);
             this.Load += new System.EventHandler(this.MenuControl_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -138,5 +166,8 @@
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape4;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape7;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape5;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }

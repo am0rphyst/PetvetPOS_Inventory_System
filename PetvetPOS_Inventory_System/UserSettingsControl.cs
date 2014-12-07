@@ -14,6 +14,7 @@ namespace PetvetPOS_Inventory_System
     {
         private MasterController masterController;
         private Panel userControlPanel;
+        private string username;
 
         public UserSettingsControl()
         {
@@ -32,37 +33,16 @@ namespace PetvetPOS_Inventory_System
             }
         }
 
-        private void rectangleShape1_Click(object sender, EventArgs e)
-        {
-            partB.Visible = true;
-            label2.Visible = true;
-            timer1.Start();
-           // returnHome();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            partB.Visible = true;
-            label2.Visible = true;
-            timer1.Start();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            partB.Visible = false;
-            label2.Visible = false;
-            label2.Visible = false;
-        }
-
         public string accessLoginName 
         {
             get
             {
-                return loginName.Text;
+                return username;
             }
             set
             {
-                loginName.Text = value;
+                username = value;
+                loginName.Text = "Hi " + username + "!";
             }
         }
 
@@ -99,12 +79,9 @@ namespace PetvetPOS_Inventory_System
             }
         }
 
-        private void partB_Click(object sender, EventArgs e)
-        {
-            returnHome();
-        }
+ 
 
-        private void rectangleShape1_Click_1(object sender, EventArgs e)
+        private void lOGOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             returnHome();
         }
