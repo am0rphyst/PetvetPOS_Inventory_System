@@ -78,7 +78,13 @@ namespace PetvetPOS_Inventory_System
                 masterController.setMenuBar();
                 showUserSettingsControl(username);
             }
+            else
+            {
+                MessageBox.Show("Login Failed");
+                txtPassword.Clear();
+            }
 
+            
            // createSession(form.accessSession);
         }
 
@@ -90,7 +96,8 @@ namespace PetvetPOS_Inventory_System
             }
             set
             {
-                masterController = value;   
+                masterController = value;
+                masterController.setFormReturnkey = btnLogin;
             } 
         }
 

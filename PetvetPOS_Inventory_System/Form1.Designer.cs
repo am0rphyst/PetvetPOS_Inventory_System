@@ -74,7 +74,8 @@ namespace PetvetPOS_Inventory_System
             this.panelSidebar.Location = new System.Drawing.Point(0, 78);
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(107, 619);
-            this.panelSidebar.TabIndex = 2;
+            this.panelSidebar.TabIndex = 0;
+            this.panelSidebar.TabStop = true;
             this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSidebar_Paint);
             // 
             // panel1
@@ -86,7 +87,8 @@ namespace PetvetPOS_Inventory_System
             this.panel1.Location = new System.Drawing.Point(107, 78);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(677, 36);
-            this.panel1.TabIndex = 3;
+            this.panel1.TabIndex = 0;
+            this.panel1.TabStop = true;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // userControlPanel
@@ -97,7 +99,8 @@ namespace PetvetPOS_Inventory_System
             this.userControlPanel.Location = new System.Drawing.Point(0, 0);
             this.userControlPanel.Name = "userControlPanel";
             this.userControlPanel.Size = new System.Drawing.Size(214, 36);
-            this.userControlPanel.TabIndex = 3;
+            this.userControlPanel.TabIndex = 0;
+            this.userControlPanel.TabStop = true;
             // 
             // panel3
             // 
@@ -107,7 +110,7 @@ namespace PetvetPOS_Inventory_System
             this.panel3.Location = new System.Drawing.Point(507, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(170, 36);
-            this.panel3.TabIndex = 2;
+            this.panel3.TabIndex = 0;
             // 
             // label2
             // 
@@ -116,7 +119,7 @@ namespace PetvetPOS_Inventory_System
             this.label2.Location = new System.Drawing.Point(13, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 18);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "label2";
             // 
             // mainPanel
@@ -126,7 +129,8 @@ namespace PetvetPOS_Inventory_System
             this.mainPanel.Location = new System.Drawing.Point(107, 114);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(677, 583);
-            this.mainPanel.TabIndex = 4;
+            this.mainPanel.TabIndex = 0;
+            this.mainPanel.TabStop = true;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
             // titlebar1
@@ -138,7 +142,8 @@ namespace PetvetPOS_Inventory_System
             this.titlebar1.Name = "titlebar1";
             this.titlebar1.setTitle = "HOME";
             this.titlebar1.Size = new System.Drawing.Size(782, 76);
-            this.titlebar1.TabIndex = 1;
+            this.titlebar1.TabIndex = 0;
+            this.titlebar1.TabStop = false;
             this.titlebar1.Load += new System.EventHandler(this.titlebar1_Load);
             // 
             // frmMain

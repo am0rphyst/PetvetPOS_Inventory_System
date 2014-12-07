@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pawPrint2 = new PetvetPOS_Inventory_System.PawPrint();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.ovalShape8 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape7 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
@@ -49,15 +48,16 @@
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pawPrint1 = new PetvetPOS_Inventory_System.PawPrint();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.pawPrint4 = new PetvetPOS_Inventory_System.PawPrint();
-            this.pawPrint3 = new PetvetPOS_Inventory_System.PawPrint();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pawPrint4 = new PetvetPOS_Inventory_System.PawPrint();
+            this.pawPrint3 = new PetvetPOS_Inventory_System.PawPrint();
+            this.pawPrint2 = new PetvetPOS_Inventory_System.PawPrint();
+            this.pawPrint1 = new PetvetPOS_Inventory_System.PawPrint();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,13 +78,6 @@
             this.panel1.Size = new System.Drawing.Size(340, 411);
             this.panel1.TabIndex = 0;
             // 
-            // pawPrint2
-            // 
-            this.pawPrint2.Location = new System.Drawing.Point(237, 306);
-            this.pawPrint2.Name = "pawPrint2";
-            this.pawPrint2.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint2.TabIndex = 8;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
@@ -93,7 +86,7 @@
             this.panel5.Controls.Add(this.txtUsername);
             this.panel5.Controls.Add(this.txtPassword);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.btnLogin);
             this.panel5.Controls.Add(this.shapeContainer2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(42, 103);
@@ -118,24 +111,24 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(27, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(92, 91);
+            this.txtUsername.Location = new System.Drawing.Point(102, 91);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(167, 20);
             this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(92, 128);
+            this.txtPassword.Location = new System.Drawing.Point(102, 128);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(167, 20);
             this.txtPassword.TabIndex = 1;
@@ -145,30 +138,30 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(28, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(122, 154);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Login";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.btnLogin.FlatAppearance.BorderSize = 2;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(148)))), ((int)(((byte)(157)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(122, 154);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 28);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // shapeContainer2
             // 
@@ -308,13 +301,6 @@
             this.panel3.TabIndex = 5;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // pawPrint1
-            // 
-            this.pawPrint1.Location = new System.Drawing.Point(74, 24);
-            this.pawPrint1.Name = "pawPrint1";
-            this.pawPrint1.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint1.TabIndex = 0;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -360,20 +346,6 @@
             this.panel8.Size = new System.Drawing.Size(88, 347);
             this.panel8.TabIndex = 2;
             // 
-            // pawPrint4
-            // 
-            this.pawPrint4.Location = new System.Drawing.Point(0, 0);
-            this.pawPrint4.Name = "pawPrint4";
-            this.pawPrint4.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint4.TabIndex = 0;
-            // 
-            // pawPrint3
-            // 
-            this.pawPrint3.Location = new System.Drawing.Point(31, 62);
-            this.pawPrint3.Name = "pawPrint3";
-            this.pawPrint3.Size = new System.Drawing.Size(55, 59);
-            this.pawPrint3.TabIndex = 0;
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
@@ -392,6 +364,34 @@
             this.panel6.Size = new System.Drawing.Size(422, 64);
             this.panel6.TabIndex = 0;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // pawPrint4
+            // 
+            this.pawPrint4.Location = new System.Drawing.Point(0, 0);
+            this.pawPrint4.Name = "pawPrint4";
+            this.pawPrint4.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint4.TabIndex = 0;
+            // 
+            // pawPrint3
+            // 
+            this.pawPrint3.Location = new System.Drawing.Point(31, 62);
+            this.pawPrint3.Name = "pawPrint3";
+            this.pawPrint3.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint3.TabIndex = 0;
+            // 
+            // pawPrint2
+            // 
+            this.pawPrint2.Location = new System.Drawing.Point(237, 306);
+            this.pawPrint2.Name = "pawPrint2";
+            this.pawPrint2.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint2.TabIndex = 8;
+            // 
+            // pawPrint1
+            // 
+            this.pawPrint1.Location = new System.Drawing.Point(74, 24);
+            this.pawPrint1.Name = "pawPrint1";
+            this.pawPrint1.Size = new System.Drawing.Size(55, 59);
+            this.pawPrint1.TabIndex = 0;
             // 
             // LoginPane
             // 
@@ -419,7 +419,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;

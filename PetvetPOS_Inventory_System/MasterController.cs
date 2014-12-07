@@ -59,6 +59,14 @@ namespace PetvetPOS_Inventory_System
             menuBar.removeMenuControls();
         }
 
+        public Button setFormReturnkey
+        {
+            set
+            {
+                form.AcceptButton = value;
+            }
+        }
+
         public void clearTitleHeader()
         {
             titleBar.setTitle = "HOME";
