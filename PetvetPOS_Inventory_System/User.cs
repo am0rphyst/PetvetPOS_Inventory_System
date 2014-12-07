@@ -8,7 +8,7 @@ namespace PetvetPOS_Inventory_System
 {
     class User
     {
-        string username, password;
+        string username, password, level;
         
         public User(string username, string password){
             this.username = username;
@@ -20,9 +20,24 @@ namespace PetvetPOS_Inventory_System
         {
             if ((username == "Randy") && (password == "Pogi"))
             {
+                level = "cashier";
                 return true;
             }
+            else
+            {
+                if ((username == "Erika" ) && (password == "Emmanuel"))
+                {
+                    level = "admin";
+                    return true;
+                }
+            }
+
             return false;
+        }
+
+        public string getUserLevel()
+        {
+            return level;
         }
 
         public string getUsername 

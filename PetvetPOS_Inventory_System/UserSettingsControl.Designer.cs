@@ -56,7 +56,7 @@
             this.partB.BorderColor = System.Drawing.Color.White;
             this.partB.CornerRadius = 3;
             this.partB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.partB.Location = new System.Drawing.Point(140, -9);
+            this.partB.Location = new System.Drawing.Point(139, -9);
             this.partB.Name = "partB";
             this.partB.Size = new System.Drawing.Size(45, 49);
             this.partB.Visible = false;

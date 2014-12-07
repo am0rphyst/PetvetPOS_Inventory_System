@@ -10,20 +10,21 @@ namespace PetvetPOS_Inventory_System
 {
     public class MasterController
     {
-        Panel panel;
-        MenuBar menuBar;
-        Titlebar titleBar;
-        UserControl currentContent;
-        Form form;
+        private Form mainForm;
+        private Panel mainPanel;
+        private MenuBar menuBar;
+        private Titlebar titleBar;
+        private UserControl currentContent;
 
-        public MasterController(Panel panel, MenuBar menuBar, Titlebar titleBar, Form form)
+
+        public MasterController(Panel mainPanel, MenuBar menuBar, Titlebar titleBar, Form mainForm)
         {
-            this.panel = panel;
+            this.mainPanel = mainPanel;
             this.menuBar = menuBar;
             this.menuBar.accessMasterController = this;
             this.titleBar = titleBar;
             this.titleBar.accessMasterController = this;
-            this.form = form;
+            this.mainForm = mainForm;
             currentContent = null;
         }
 
@@ -41,17 +42,31 @@ namespace PetvetPOS_Inventory_System
 
         public void changeCurrentContent(UserControl content)
         {
-            // 
-            this.panel.Controls.Remove(currentContent);
-            this.currentContent = content;
-            this.currentContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.currentContent.Location = new System.Drawing.Point(0, 0);
-            this.panel.Controls.Add(this.currentContent);
+            if (currentContent != null)
+            {
+                mainPanel.Controls.Remove(currentContent);
+            }
+
+            currentContent = content;
+            currentContent.Dock = DockStyle.Fill;
+            currentContent.Location = new Point(0, 0);
+            mainPanel.Controls.Add(currentContent);
         }
 
         public void setMenuBar()
         {
             menuBar.initControlLocation();
+        }
+
+        public void defaultSelectedMenu(int index)
+        {
+            menuBar.selectControlbyIndex(index);
+        }
+
+        // overload method
+        public void defaultSelectedMenu(string name)
+        {
+            menuBar.selectControlbyName(name);
         }
 
         public void clearMenuBar()
@@ -63,14 +78,25 @@ namespace PetvetPOS_Inventory_System
         {
             set
             {
-                form.AcceptButton = value;
+                mainForm.AcceptButton = value;
             }
+        }
+
+        public void closeForm()
+        {
+            mainForm.Close();
         }
 
         public void clearTitleHeader()
         {
             titleBar.setTitle = "HOME";
             titleBar.setImage = null;
+        }
+
+        public void updateTitle(string titlename, Image icon)
+        {
+            titleBar.setTitle = titlename;
+            titleBar.setImage = icon;
         }
     }
 }

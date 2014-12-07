@@ -12,10 +12,10 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class LoginPane : UserControl
     {
-        frmMain form;
         Panel userControlPanel;
         User user;
         MasterController masterController;
+        int loginAttempt = 0;
 
         public LoginPane()
         {
@@ -28,27 +28,6 @@ namespace PetvetPOS_Inventory_System
             {
                 userControlPanel = value;
             }
-        }
-
-        public frmMain setForm 
-        {
-            get
-            {
-                return form;
-            }
-            set
-            {
-                form = value;
-            }
-        }
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void showUserSettingsControl(string username)
@@ -64,8 +43,10 @@ namespace PetvetPOS_Inventory_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            UserControl nextControl;
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            string level, menuName;
 
             Login login = new Login();
             user = login.userLogin(username, password);
@@ -73,19 +54,38 @@ namespace PetvetPOS_Inventory_System
             if (user != null)
             {
                 username = user.getUsername;
-                UserControl userAdminPane = new UserAdministration();
-                masterController.changeCurrentContent(userAdminPane);
-                masterController.setMenuBar();
+                level = user.getUserLevel();
+               
+                if (level == "admin")
+                {
+                    nextControl = new Reports();
+                    menuName = "Reports";
+                }
+                else
+                {
+                    nextControl  = new POS();
+                    menuName = "P.O.S.";
+                }
+
                 showUserSettingsControl(username);
+                masterController.changeCurrentContent(nextControl);
+                masterController.setMenuBar();
+                masterController.defaultSelectedMenu(menuName);
             }
             else
             {
-                MessageBox.Show("Login Failed");
+                loginAttempt++;
+
+                if (loginAttempt == 3)
+                {
+                    MessageBox.Show("Oopss.. 3 login failed attemp reach. Window will now close.");
+                    masterController.closeForm();
+                }
+
+                MessageBox.Show("Login Failed. " + (3 - loginAttempt) + " attemp/s left.");
                 txtPassword.Clear();
             }
 
-            
-           // createSession(form.accessSession);
         }
 
         public MasterController accessMasterController
@@ -105,8 +105,6 @@ namespace PetvetPOS_Inventory_System
         {
 
         }
-        //public void createSession(Session session){
-        //    session = new Session(user);
-        //}
+
     }
 }

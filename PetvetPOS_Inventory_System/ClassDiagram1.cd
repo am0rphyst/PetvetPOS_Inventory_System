@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PetvetPOS_Inventory_System.frmMain" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAIBAgAACAAAACIAEIIAAAEACAASADBAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.Inventory" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.Login" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAQA=</HashCode>
+      <FileName>Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.LoginPane" Collapsed="true">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IRgAAACAACAAABAAf4CCAgACAAAAAAAAAFEAAyBBIQA=</HashCode>
+      <FileName>LoginPane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.MasterController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQRAAAgAABAEAAEAAEAIAIAAAAAIAAACAgAAAQAAAAA=</HashCode>
+      <FileName>MasterController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.MenuBar" Collapsed="true">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACACAEAgAAiSAAACABgAAAAAAAICICAQAAA=</HashCode>
+      <FileName>MenuBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.MenuControl" Collapsed="true">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECkCAIAUACAKAAABLQCiAaACAAAgAEFBAQAAACAAgAA=</HashCode>
+      <FileName>MenuControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.POS" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>POS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.Reports" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.Session" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAACBAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.Titlebar" Collapsed="true">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAQCAABAAAAQCCAAACAAAAAAAAAAAAASBBAAA=</HashCode>
+      <FileName>Titlebar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.User" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEAAAAACAAAAAAAAAEAAAEAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.UserAdministration" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAQAAAAACAAAACAAAAAAAAAAAAAAABBAA=</HashCode>
+      <FileName>UserAdministration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetvetPOS_Inventory_System.UserSettingsControl" Collapsed="true">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAUAACAAABAEBACCAACCACACIAAAAACAACBAIAQ=</HashCode>
+      <FileName>UserSettingsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

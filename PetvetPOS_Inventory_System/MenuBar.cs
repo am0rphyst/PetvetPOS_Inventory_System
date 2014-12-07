@@ -13,9 +13,8 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class MenuBar : UserControl
     {
-        MenuControl[] menuControls;
-        Titlebar titlebar;
-        MasterController masterController;
+        private MenuControl[] menuControls;
+        private MasterController masterController;
 
         public void initControlLocation()
         {
@@ -28,7 +27,33 @@ namespace PetvetPOS_Inventory_System
                 menuControl.TabIndex = i;
                 this.Controls.Add(menuControl);
                 i++;
-                startingPosition += 150;
+                startingPosition += 140;
+            }
+        }
+
+        public void selectControlbyIndex(int index)
+        {
+            if (index > menuControls.Length)
+                return;
+
+            unselectAll();
+            menuControls[index].select();
+            masterController.updateTitle(menuControls[index].accessIconLabel, menuControls[index].getIconImage);
+            updateMenus();
+        }
+
+        public void selectControlbyName(string name)
+        {
+            unselectAll();
+            foreach (MenuControl menuControl in menuControls)
+            {
+                if (menuControl.accessIconLabel == name)
+                {
+                    menuControl.select();
+                    masterController.updateTitle(menuControl.accessIconLabel, menuControl.getIconImage);
+                    updateMenus();
+                    break;
+                }
             }
         }
 
@@ -58,20 +83,6 @@ namespace PetvetPOS_Inventory_System
             }
         }
 
-        private void MenuBar_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuControl1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        public void controlTitleBar(Titlebar titlebar)
-        {
-            this.titlebar = titlebar;
-        }
 
         public void updateMenus()
         {
@@ -89,40 +100,6 @@ namespace PetvetPOS_Inventory_System
             }
         }
 
-        private void menuControl1_Click(object sender, EventArgs e)
-        {
-            //unselectAll();
-            //menuControl2.unselect();
-            //menuControl3.unselect();
-            //menuControl1.select();
-            //menuControls[0].select();
-            //titlebar.setTitle = menuControl1.accessIconLabel;
-            //titlebar.Refresh();
-        }
-
-        private void menuControl2_Load(object sender, EventArgs e)
-        {
-
-           // unselectAll();
-            //menuControls[1].select();
-        }
-
-        private void menuControl3_Click(object sender, EventArgs e)
-        {
-            //titlebar.setTitle = menuControl3.accessIconLabel;
-            //titlebar.Refresh();
-
-            //unselectAll();
-            ////menuControls[2].select();
-        }
-
-        private void menuControl2_Click(object sender, EventArgs e)
-        {
-            //titlebar.setTitle = menuControl2.accessIconLabel;
-            //titlebar.Refresh();
-            //unselectAll();
-        }
-
         public MenuControl[] accessMenuControl
         {
             get
@@ -134,7 +111,6 @@ namespace PetvetPOS_Inventory_System
             {
                 this.menuControls = value;
                 setMenuControl();
-               // initControlLocation();
             }
         }
 
@@ -143,7 +119,6 @@ namespace PetvetPOS_Inventory_System
             foreach(MenuControl menuControl in menuControls)
 	        {
                 menuControl.accessMenuBar = this;
-                menuControl.accessTitlebar = titlebar;
                 menuControl.accessMasterController = this.masterController;
     	    }
         }

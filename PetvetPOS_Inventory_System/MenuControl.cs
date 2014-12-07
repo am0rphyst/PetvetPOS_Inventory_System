@@ -7,35 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Microsoft.VisualBasic.PowerPacks;
 
 namespace PetvetPOS_Inventory_System
 {
     public partial class MenuControl : UserControl
     {
-        Label menuName;
-        Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape1;
-        Color origColor;
+        private Label menuName;
+        private OvalShape iconShape;
+        private Color origColor;
 
-        Titlebar titlebar;
-        MenuBar menuBar;
-        bool isSelected;
-
-        UserControl mapControl;
-        MasterController masterController;
+        private MenuBar menuBar;
+        private bool isSelected;
+        private UserControl mapControl;
+        private MasterController masterController;
 
         public MenuControl()
         {
             InitializeComponent();
-            ovalShape1 = icon;
+            iconShape = icon;
             menuName = lblDesc;
             origColor = icon.BackColor;
         }
 
+
         public MenuControl(Image image, string menuString)
         {
             InitializeComponent();
-            ovalShape1 = icon;
+            iconShape = icon;
             menuName = lblDesc;
             setIconImage = image;
             menuName.Text = menuString;
@@ -62,12 +61,22 @@ namespace PetvetPOS_Inventory_System
             }
                 
         }
+
         public Image setIconImage 
         {   
             set
             {
-                ovalShape1.BackgroundImage = value;
+                iconShape.BackgroundImage = value;
             }
+        }
+
+        public Image getIconImage
+        {
+            get
+            {
+                return icon.BackgroundImage;
+            }
+            
         }
 
         public string accessIconLabel
@@ -84,18 +93,16 @@ namespace PetvetPOS_Inventory_System
 
         public void select()
         {
-           // icon.BackColor = Color.White;
             isSelected = true;
         }
 
         private void icon_Click(object sender, EventArgs e)
         {
-            //isSelected = true;
-            //select();
-            titlebar.setTitle = menuName.Text;
-            titlebar.setImage = icon.BackgroundImage;
+            // Unselect all menus before selecting new
             menuBar.unselectAll();
             this.select();
+
+            masterController.updateTitle(menuName.Text, icon.BackgroundImage);
             menuBar.updateMenus();
             masterController.changeCurrentContent(mapControl);
         }
@@ -118,6 +125,7 @@ namespace PetvetPOS_Inventory_System
                 icon.BorderColor = Color.White;
             }
         }
+
         private void icon_MouseEnter(object sender, EventArgs e)
         {
             icon.BorderColor = Color.Gold;
@@ -130,24 +138,10 @@ namespace PetvetPOS_Inventory_System
 
         public void unselect()
         {
-            //icon.BackColor = origColor;
             isSelected = false;
         }
 
-        public Titlebar accessTitlebar
-        {
-            set
-            {
-                titlebar = value;
-            }
-        }
-
         private void MenuControl_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDesc_Click(object sender, EventArgs e)
         {
 
         }

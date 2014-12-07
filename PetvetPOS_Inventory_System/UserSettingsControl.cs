@@ -12,8 +12,8 @@ namespace PetvetPOS_Inventory_System
 {
     public partial class UserSettingsControl : UserControl
     {
-        MasterController masterController;
-        Panel userControlPanel;
+        private MasterController masterController;
+        private Panel userControlPanel;
 
         public UserSettingsControl()
         {

@@ -93,7 +93,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(298, 202);
             this.panel5.TabIndex = 7;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label3
             // 
@@ -299,7 +298,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(340, 103);
             this.panel3.TabIndex = 5;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel2
             // 

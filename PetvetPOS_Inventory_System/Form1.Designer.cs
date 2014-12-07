@@ -35,7 +35,7 @@ namespace PetvetPOS_Inventory_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.userControlPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.titlebar1 = new PetvetPOS_Inventory_System.Titlebar();
             this.panelHeader.SuspendLayout();
@@ -76,7 +76,6 @@ namespace PetvetPOS_Inventory_System
             this.panelSidebar.Size = new System.Drawing.Size(107, 619);
             this.panelSidebar.TabIndex = 0;
             this.panelSidebar.TabStop = true;
-            this.panelSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSidebar_Paint);
             // 
             // panel1
             // 
@@ -89,7 +88,6 @@ namespace PetvetPOS_Inventory_System
             this.panel1.Size = new System.Drawing.Size(677, 36);
             this.panel1.TabIndex = 0;
             this.panel1.TabStop = true;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // userControlPanel
             // 
@@ -105,22 +103,24 @@ namespace PetvetPOS_Inventory_System
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblDate);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(507, 0);
+            this.panel3.Location = new System.Drawing.Point(428, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(170, 36);
+            this.panel3.Size = new System.Drawing.Size(249, 36);
             this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // label2
+            // lblDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(13, 8);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(52, 18);
+            this.lblDate.TabIndex = 0;
+            this.lblDate.Text = "label2";
             // 
             // mainPanel
             // 
@@ -131,7 +131,6 @@ namespace PetvetPOS_Inventory_System
             this.mainPanel.Size = new System.Drawing.Size(677, 583);
             this.mainPanel.TabIndex = 0;
             this.mainPanel.TabStop = true;
-            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
             // titlebar1
             // 
@@ -144,7 +143,6 @@ namespace PetvetPOS_Inventory_System
             this.titlebar1.Size = new System.Drawing.Size(782, 76);
             this.titlebar1.TabIndex = 0;
             this.titlebar1.TabStop = false;
-            this.titlebar1.Load += new System.EventHandler(this.titlebar1_Load);
             // 
             // frmMain
             // 
@@ -181,7 +179,7 @@ namespace PetvetPOS_Inventory_System
         private Titlebar titlebar1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel userControlPanel;
     }

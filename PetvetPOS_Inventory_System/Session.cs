@@ -8,9 +8,9 @@ namespace PetvetPOS_Inventory_System
 {
     class Session
     {
-        User currentUser;
-        DateTime dateLogin;
-        TimeSpan timeLogin;
+        private User currentUser;
+        private DateTime dateLogin;
+        private TimeSpan timeLogin;
    
         public Session(User user)
         {

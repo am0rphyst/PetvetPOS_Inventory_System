@@ -114,7 +114,6 @@
             this.lblDesc.TabIndex = 1;
             this.lblDesc.Text = "Menu Name";
             this.lblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblDesc.Click += new System.EventHandler(this.lblDesc_Click);
             // 
             // MenuControl
             // 
