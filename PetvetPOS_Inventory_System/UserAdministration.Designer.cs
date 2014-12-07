@@ -36,7 +36,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -97,6 +97,7 @@
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.Location = new System.Drawing.Point(237, 33);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(61, 279);
@@ -121,15 +122,22 @@
             this.panel4.Size = new System.Drawing.Size(200, 279);
             this.panel4.TabIndex = 4;
             // 
-            // imageList1
+            // listBox1
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "iconmonstr-archive-7-icon-256.png");
-            this.imageList1.Images.SetKeyName(1, "iconmonstr-archive-8-icon-256.png");
-            this.imageList1.Images.SetKeyName(2, "iconmonstr-barcode-2-icon-256.png");
-            this.imageList1.Images.SetKeyName(3, "iconmonstr-barcode-7-icon-256.png");
-            this.imageList1.Images.SetKeyName(4, "iconmonstr-barcode-8-icon-256.png");
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 21;
+            this.listBox1.Items.AddRange(new object[] {
+            "Erika Emmanuel",
+            "Randy Panol"});
+            this.listBox1.Location = new System.Drawing.Point(0, 37);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(50);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(200, 215);
+            this.listBox1.TabIndex = 0;
             // 
             // panel5
             // 
@@ -166,7 +174,7 @@
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 37);
@@ -220,22 +228,15 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Audit Trail";
             // 
-            // listBox1
+            // imageList1
             // 
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
-            this.listBox1.Items.AddRange(new object[] {
-            "Erika Emmanuel",
-            "Randy Panol"});
-            this.listBox1.Location = new System.Drawing.Point(0, 37);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(50);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(200, 215);
-            this.listBox1.TabIndex = 0;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "iconmonstr-archive-7-icon-256.png");
+            this.imageList1.Images.SetKeyName(1, "iconmonstr-archive-8-icon-256.png");
+            this.imageList1.Images.SetKeyName(2, "iconmonstr-barcode-2-icon-256.png");
+            this.imageList1.Images.SetKeyName(3, "iconmonstr-barcode-7-icon-256.png");
+            this.imageList1.Images.SetKeyName(4, "iconmonstr-barcode-8-icon-256.png");
             // 
             // UserAdministration
             // 

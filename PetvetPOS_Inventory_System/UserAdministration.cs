@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace PetvetPOS_Inventory_System
 {
-    public partial class UserAdministration : UserControl
+    public partial class UserAdministration : MyUserControl
     {
         public UserAdministration()
+        {
+            InitializeComponent();
+        }
+
+        public UserAdministration(MasterController masterController):base(masterController)
         {
             InitializeComponent();
         }

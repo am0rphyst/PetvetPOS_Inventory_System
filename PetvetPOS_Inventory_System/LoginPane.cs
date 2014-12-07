@@ -10,11 +10,9 @@ using System.Windows.Forms;
 
 namespace PetvetPOS_Inventory_System
 {
-    public partial class LoginPane : UserControl
+    public partial class LoginPane : MyUserControl
     {
-        Panel userControlPanel;
         User user;
-        MasterController masterController;
         int loginAttempt = 0;
 
         public LoginPane()
@@ -22,54 +20,52 @@ namespace PetvetPOS_Inventory_System
             InitializeComponent();
         }
 
-        public Panel setUserControlPanel 
+        public LoginPane(MasterController masterController)
         {
-            set
-            {
-                userControlPanel = value;
-            }
+            InitializeComponent();
+            accessMasterController = masterController;
+            //masterController.accessCurrentContent = this;
+            //masterController.changeCurrentContent(this);
         }
 
         private void showUserSettingsControl(string username)
         {
-            UserSettingsControl userSettingsControl = new UserSettingsControl();
-            userSettingsControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            userSettingsControl.Location = new System.Drawing.Point(0, 0);
-            this.userControlPanel.Controls.Add(userSettingsControl);
-            userSettingsControl.accessMasterController = masterController;
-            userSettingsControl.accessUserControlPanel = userControlPanel;
-            userSettingsControl.accessLoginName = username;
+            masterController.showUserSettingsControl(username);
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserControl nextControl;
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            string level, menuName;
-
+        
             Login login = new Login();
             user = login.userLogin(username, password);
             
             if (user != null)
             {
-                username = user.getUsername;
-                level = user.getUserLevel();
-               
+                MyUserControl nextControl;
+                string level = user.getUserLevel();
+                string menuName;
+                bool isAdmin = false;
+         
                 if (level == "admin")
                 {
                     nextControl = new Reports();
                     menuName = "Reports";
+                    isAdmin = true;
                 }
                 else
                 {
-                    nextControl  = new POS();
+                    nextControl = new POS();
                     menuName = "P.O.S.";
+                    isAdmin = false;
+                    
                 }
 
+                masterController.initMenuBar(isAdmin);
                 showUserSettingsControl(username);
                 masterController.changeCurrentContent(nextControl);
-                masterController.setMenuBar();
                 masterController.defaultSelectedMenu(menuName);
             }
             else

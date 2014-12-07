@@ -10,15 +10,20 @@ using System.Windows.Forms;
 
 namespace PetvetPOS_Inventory_System
 {
-    public partial class UserSettingsControl : UserControl
+    public partial class UserSettingsControl : MyUserControl
     {
-        private MasterController masterController;
-        private Panel userControlPanel;
         private string username;
 
         public UserSettingsControl()
         {
             InitializeComponent();
+        }
+
+        public UserSettingsControl(Panel panel, MasterController masterController):base(panel,false)
+        {
+            InitializeComponent();
+            this.masterController = masterController;
+            this.masterController.setUserSettingsControl = this;
         }
 
         public MasterController accessMasterController 
@@ -51,6 +56,12 @@ namespace PetvetPOS_Inventory_System
 
         }
 
+        public void appearWithName(string name)
+        {
+            accessLoginName = name;
+            appear();
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
             returnHome();
@@ -58,28 +69,12 @@ namespace PetvetPOS_Inventory_System
 
         public void returnHome()
         {
-            LoginPane loginPane = new LoginPane();
+            disappear();
+            LoginPane loginPane = new LoginPane(masterController);
             masterController.changeCurrentContent(loginPane);
-            loginPane.accessMasterController = masterController;
-            loginPane.setUserControlPanel = userControlPanel;
             masterController.clearMenuBar();
-            userControlPanel.Controls.Remove(this);
             masterController.clearTitleHeader();
-        }
-
-        public Panel accessUserControlPanel 
-        {
-            get
-            {
-                return userControlPanel;
-            }
-            set
-            {
-                userControlPanel = value;
-            }
-        }
-
- 
+        } 
 
         private void lOGOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {

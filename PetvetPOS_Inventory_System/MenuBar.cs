@@ -11,10 +11,9 @@ using PetvetPOS_Inventory_System;
 
 namespace PetvetPOS_Inventory_System
 {
-    public partial class MenuBar : UserControl
+    public partial class MenuBar : MyUserControl
     {
-        private MenuControl[] menuControls;
-        private MasterController masterController;
+        protected MenuControl[] menuControls;
 
         public void initControlLocation()
         {
@@ -69,6 +68,14 @@ namespace PetvetPOS_Inventory_System
         public MenuBar()
         {
             InitializeComponent();
+        }
+
+        public MenuBar(Panel panel, MasterController masterController)
+            : base(panel,true)
+        {
+            InitializeComponent();
+            this.masterController = masterController;
+            this.masterController.setMenuBar = this;
         }
 
         public MasterController accessMasterController

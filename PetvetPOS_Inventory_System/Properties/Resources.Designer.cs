@@ -143,6 +143,16 @@ namespace PetvetPOS_Inventory_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconmonstr_home_6_icon_256 {
+            get {
+                object obj = ResourceManager.GetObject("iconmonstr-home-6-icon-256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconmonstr_user_14_icon_256 {
             get {
                 object obj = ResourceManager.GetObject("iconmonstr-user-14-icon-256", resourceCulture);

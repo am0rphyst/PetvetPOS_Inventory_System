@@ -10,15 +10,20 @@ using System.Windows.Forms;
 
 namespace PetvetPOS_Inventory_System
 {
-    public partial class Titlebar : UserControl
+    public partial class Titlebar : MyUserControl
     {
-        private MasterController masterController;
-
 
         public Titlebar()
         {
             InitializeComponent();
             lblTitle.Text = "HOME";
+        }
+
+        public Titlebar(Panel panel, MasterController masterController):base(panel,true)
+        {
+            InitializeComponent();
+            this.masterController = masterController;
+            this.masterController.setTitleBar = this;
         }
 
         public string setTitle 

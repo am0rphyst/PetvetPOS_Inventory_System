@@ -14,7 +14,8 @@ namespace PetvetPOS_Inventory_System
         private Panel mainPanel;
         private MenuBar menuBar;
         private Titlebar titleBar;
-        private UserControl currentContent;
+        private MyUserControl currentContent;
+        private UserSettingsControl userSettingsControl;
 
 
         public MasterController(Panel mainPanel, MenuBar menuBar, Titlebar titleBar, Form mainForm)
@@ -28,7 +29,37 @@ namespace PetvetPOS_Inventory_System
             currentContent = null;
         }
 
-        public UserControl accessCurrentContent
+        public MasterController(Form mainForm, Panel mainPanel)
+        {
+            this.mainForm = mainForm;
+            this.mainPanel = mainPanel;
+        }
+
+        public Titlebar setTitleBar 
+        {
+            set
+            {
+                titleBar = value;
+            }
+        }
+
+        public MenuBar setMenuBar 
+        {
+            set
+            {
+                menuBar = value;
+            }
+        }
+
+        public UserSettingsControl setUserSettingsControl
+        {
+            set
+            {
+                userSettingsControl = value;
+            }
+        }
+
+        public MyUserControl accessCurrentContent
         {
             get
             {
@@ -40,7 +71,7 @@ namespace PetvetPOS_Inventory_System
             }
         }
 
-        public void changeCurrentContent(UserControl content)
+        public void changeCurrentContent(MyUserControl content)
         {
             if (currentContent != null)
             {
@@ -53,8 +84,21 @@ namespace PetvetPOS_Inventory_System
             mainPanel.Controls.Add(currentContent);
         }
 
-        public void setMenuBar()
+        public void initMenuBar(bool isAdmin)
         {
+            MenuList list;
+
+            if (isAdmin)
+            {
+                list = new AdminMenuList(this);
+              
+            }
+            else
+            {
+                list = new UserMenuList(this);
+            }
+
+            menuBar.accessMenuControl = list.getList;
             menuBar.initControlLocation();
         }
 
@@ -90,13 +134,25 @@ namespace PetvetPOS_Inventory_System
         public void clearTitleHeader()
         {
             titleBar.setTitle = "HOME";
-            titleBar.setImage = null;
+            titleBar.setImage = Properties.Resources.iconmonstr_home_6_icon_256;
         }
 
         public void updateTitle(string titlename, Image icon)
         {
             titleBar.setTitle = titlename;
             titleBar.setImage = icon;
+        }
+
+        public void logout()
+        {
+            userSettingsControl.returnHome();
+            clearMenuBar();
+            clearTitleHeader();
+        }
+
+        public void showUserSettingsControl(string name)
+        {
+            userSettingsControl.appearWithName(name);
         }
     }
 }

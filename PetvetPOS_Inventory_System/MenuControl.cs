@@ -11,7 +11,7 @@ using Microsoft.VisualBasic.PowerPacks;
 
 namespace PetvetPOS_Inventory_System
 {
-    public partial class MenuControl : UserControl
+    public partial class MenuControl : MyUserControl
     {
         private Label menuName;
         private OvalShape iconShape;
@@ -19,8 +19,7 @@ namespace PetvetPOS_Inventory_System
 
         private MenuBar menuBar;
         private bool isSelected;
-        private UserControl mapControl;
-        private MasterController masterController;
+        private MyUserControl mapControl;
 
         public MenuControl()
         {
@@ -31,17 +30,19 @@ namespace PetvetPOS_Inventory_System
         }
 
 
-        public MenuControl(Image image, string menuString)
+        public MenuControl(Image image, string menuString, MyUserControl mapControl)
         {
             InitializeComponent();
             iconShape = icon;
             menuName = lblDesc;
             setIconImage = image;
+            
             menuName.Text = menuString;
             origColor = icon.BackColor;
+            accessMapPanel = mapControl;
         }
 
-        public UserControl accessMapPanel
+        public MyUserControl accessMapPanel
         {
             get
             {
@@ -98,11 +99,13 @@ namespace PetvetPOS_Inventory_System
 
         private void icon_Click(object sender, EventArgs e)
         {
+            string menuString = menuName.Text;
+            Image iconImage = icon.BackgroundImage;
             // Unselect all menus before selecting new
             menuBar.unselectAll();
             this.select();
-
-            masterController.updateTitle(menuName.Text, icon.BackgroundImage);
+            
+            masterController.updateTitle(menuString, iconImage);
             menuBar.updateMenus();
             masterController.changeCurrentContent(mapControl);
         }
