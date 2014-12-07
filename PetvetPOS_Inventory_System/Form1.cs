@@ -16,10 +16,12 @@ namespace PetvetPOS_Inventory_System
         private MenuBar menuBar1;
         private LoginPane loginPane;
         private MenuControl[] menuControls;
+        private Titlebar titlebar1;
 
         public frmMain()
         {
             InitializeComponent();
+            initTitleBar();
             initSideBar();
             masterController = new MasterController(mainPanel, menuBar1, titlebar1,this);
             setUpMenuControls();
@@ -74,5 +76,17 @@ namespace PetvetPOS_Inventory_System
             lblDate.Text = DateTime.Now.Date.ToLongDateString();
         }
 
+        private void initTitleBar()
+        {
+            titlebar1 = new Titlebar();
+            titlebar1.Dock = DockStyle.Fill;
+            titlebar1.Location = new Point(0, 0);
+            titlebar1.Name = "titlebar1";
+            titlebar1.setTitle = "HOME";
+            titlebar1.Size = new System.Drawing.Size(782, 76);
+            titlebar1.TabIndex = 0;
+            titlebar1.TabStop = false;
+            this.panelHeader.Controls.Add(this.titlebar1);
+        }
     }
 }

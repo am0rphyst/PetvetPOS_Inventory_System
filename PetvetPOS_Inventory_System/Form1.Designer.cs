@@ -30,15 +30,12 @@ namespace PetvetPOS_Inventory_System
         private void InitializeComponent()
         {
             this.panelHeader = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.userControlPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblDate = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.titlebar1 = new PetvetPOS_Inventory_System.Titlebar();
-            this.panelHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -47,24 +44,11 @@ namespace PetvetPOS_Inventory_System
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(99)))));
             this.panelHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelHeader.Controls.Add(this.titlebar1);
-            this.panelHeader.Controls.Add(this.lblTitle);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(784, 78);
             this.panelHeader.TabIndex = 0;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(63)))), ((int)(((byte)(17)))));
-            this.lblTitle.Location = new System.Drawing.Point(17, 12);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(160, 55);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "lblTitle";
             // 
             // panelSidebar
             // 
@@ -105,9 +89,9 @@ namespace PetvetPOS_Inventory_System
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
             this.panel3.Controls.Add(this.lblDate);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(428, 0);
+            this.panel3.Location = new System.Drawing.Point(423, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(249, 36);
+            this.panel3.Size = new System.Drawing.Size(254, 36);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -118,9 +102,9 @@ namespace PetvetPOS_Inventory_System
             this.lblDate.ForeColor = System.Drawing.Color.White;
             this.lblDate.Location = new System.Drawing.Point(13, 8);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(52, 18);
+            this.lblDate.Size = new System.Drawing.Size(60, 18);
             this.lblDate.TabIndex = 0;
-            this.lblDate.Text = "label2";
+            this.lblDate.Text = "lblDate";
             // 
             // mainPanel
             // 
@@ -131,18 +115,6 @@ namespace PetvetPOS_Inventory_System
             this.mainPanel.Size = new System.Drawing.Size(677, 583);
             this.mainPanel.TabIndex = 0;
             this.mainPanel.TabStop = true;
-            // 
-            // titlebar1
-            // 
-            this.titlebar1.accessMasterController = null;
-            this.titlebar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(158)))), ((int)(((byte)(99)))));
-            this.titlebar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.titlebar1.Location = new System.Drawing.Point(0, 0);
-            this.titlebar1.Name = "titlebar1";
-            this.titlebar1.setTitle = "HOME";
-            this.titlebar1.Size = new System.Drawing.Size(782, 76);
-            this.titlebar1.TabIndex = 0;
-            this.titlebar1.TabStop = false;
             // 
             // frmMain
             // 
@@ -161,8 +133,6 @@ namespace PetvetPOS_Inventory_System
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.panelHeader.ResumeLayout(false);
-            this.panelHeader.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -173,10 +143,7 @@ namespace PetvetPOS_Inventory_System
         #endregion
 
         private System.Windows.Forms.Panel panelHeader;
-        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelSidebar;
-
-        private Titlebar titlebar1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label lblDate;
